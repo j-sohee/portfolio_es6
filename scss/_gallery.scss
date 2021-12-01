@@ -1,0 +1,148 @@
+/*gallery---------------------------------*/
+.gallery{
+    .sub_visual{
+        background:url(../img/gallery/bg01.jpg) no-repeat center/cover;
+    }
+    .inner{
+        h1{
+            border-bottom: none;
+            margin-bottom:20px; cursor: pointer;
+        }
+        .loading{
+            width:80px; height:80px;
+            position:absolute; top:200px; left:50%;
+            transform:translateX(-50%);
+            transition:0.5s;
+            &.off{
+                opacity:0; 
+            }
+        }
+
+        #searchBox{
+            width:100%; text-align:right;
+            margin-bottom:20px; position:relative;
+            padding-right:12px;
+
+            input[type=text]{
+                width:188px; height:30px; 
+                font:13px/30px $font; color:#000;
+                border:1px solid #ccc;
+            }
+            button{
+                width:78px; height:30px;
+                border:1px solid #ccc;
+                background:#fff;
+                font:12px/30px $font; color:#888;
+                vertical-align:top;
+            }
+        }
+        #gallery{
+            width:100%; min-height:500px; position:relative;
+            opacity:0; transform:translateY(100px);
+            transition:0.5s;
+            &.on{
+                opacity:1; transform:translateY(0px);
+            } 
+
+            &::after{
+                content:''; display:block; clear:both;
+            }
+            article{
+                width:33.333%; float:left; padding:12px;
+                .list{
+                    width:100%;
+                    border-top:1px solid #ccc;
+                    .txt{
+                        width:100%; padding:10px 0 20px;
+                        p{
+                            display:inline-block; width:40%;
+                            font:12px/1 $font; color:#90AACB;
+                            &::before{
+                                content:''; display:inline-block;
+                                width:6px; height:6px; background:#90AACB;
+                                border-radius: 50%; vertical-align:middle;
+                                margin-top:-4px; margin-right:4px;
+                            }
+                        }
+                        span{
+                            display:inline-block; width:60%;
+                            text-align: right;
+                            font:12px/1 $font; color:#666;
+                        }
+                        h2{
+                            font: 700 20px/1.3 $font; color:#333;
+                            margin-top:10px;
+                        }
+                    }
+                    a{
+                        display:block; width:100%;
+                        img{
+                            width:100%; margin-bottom:20px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+.pop{
+    width:100%; height:100vh;
+    background:rgba(0,0,0,0.8);
+    position:fixed; top:0; left:0;
+    padding:80px;
+    img{ width:100%; height:100%; object-fit:contain; }
+    span {
+        display:block; position:absolute; top:20px; right:20px;
+        font:18px/1 $font; color:#fff; cursor:pointer;
+    }
+}
+
+@media screen and (max-width:$tablet){
+.gallery{
+    .inner{
+        width:100%; padding:0 20px;
+    }
+}
+    
+}
+
+@media screen and (max-width:699px){
+.gallery{
+    .inner{
+        #gallery{
+            article{
+                width:50%; 
+            }
+        }
+    }
+}
+
+.pop{
+    padding:80px 40px;
+}
+
+}
+
+@media screen and (max-width:$mobile){
+.gallery{
+    .inner{
+        h1{
+            font-size:28px;
+        }
+        #searchBox{
+                text-align:center;
+        }
+        #gallery{
+            article{
+                width:100%; 
+            }
+        }
+    }
+}
+
+.pop{
+    padding:80px 20px;
+}
+
+}

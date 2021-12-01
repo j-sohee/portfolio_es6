@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>join</title>
+    <script src="https://kit.fontawesome.com/6ce8152991.js" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <link rel="stylesheet" href="css/style.css">
+    <script defer src="js/join.js"></script>
+    <script defer src="js/menu.js"></script>
+    <script>
+        $(document).ready(function(){
+            new MyForm("#myForm",[
+                {
+                    type:"text",
+                    name: "name",
+                    len:2
+                },
+                {
+                    type:"text",
+                    name : "userid",
+                    len : 5
+                },
+                {
+                    type : "password",
+                    name : ["pwd", "pwd_check"],
+                    len : 8
+                },
+                {
+                    type : "email",
+                    name : "email"
+                }
+            ]);
+        })
+    </script>
+</head>
+<body>
+    <header id="header_sub" class="myScroll">
+        <div class="inner">
+            <h1>
+                <a href="index.html">DECODLAB</a>
+            </h1>
+            <a href="#" class="btnCall">
+                <span>전체메뉴</span>
+            </a>
+            <div class="util">
+                <a href="#"><img src="img/icon_location.png"></a>
+                <a href="#"><img src="img/icon_search.png"></i></a>
+            </div>
+            <div class="user">
+                <a href="join.html"><img src="img/icon_user.png"></a>
+                <a href="#"><img src="img/icon_sign_in.png"></a>
+            </div>
+            <nav class="menuWeb">
+                <ul id="gnb">
+                    <li>
+                        <a href="department.html">DEPARTMENT</a>
+                        <div class="gnb_2depth">
+                            <ul class="dpe1">
+                                <li><a href="#">NEW</a></li>
+                                <li><a href="#">BEST</a></li>
+                                <li><a href="#">ALL</a></li>
+                            </ul>
+                            <ul class="dep2">
+                                <li><strong>ABOUT TEAM</strong></li>
+                                <li><a href="#">SUMMARY</a></li>
+                                <li><a href="#">PROJECT</a></li>
+                                <li><a href="#">OUR TEAM</a></li>
+                                <li><a href="#">BRAND</a></li>
+                            </ul>
+                            <ul class="dep3">
+                                <li><strong>ABOUT TEAM</strong></li>
+                                <li><a href="#">SUMMARY</a></li>
+                                <li><a href="#">PROJECT</a></li>
+                                <li><a href="#">OUR TEAM</a></li>
+                                <li><a href="#">BRAND</a></li>
+                            </ul>
+                            <div class="pic">
+                                <img src="img/community/bg1.jpg">
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="youtube.html">YOUTUBE</a>
+                        <div class="gnb_2depth">
+                            <ul class="dpe1">
+                                <li><a href="#">NEW</a></li>
+                                <li><a href="#">BEST</a></li>
+                                <li><a href="#">ALL</a></li>
+                            </ul>
+                            <ul class="dep2">
+                                <li><strong>PREMIUM</strong></li>
+                                <li><a href="#">CHANNEL</a></li>
+                                <li><a href="#">LEVELS</a></li>
+                                <li><a href="#">INTERVIEW</a></li>
+                                <li><a href="#">BRAND</a></li>
+                            </ul>
+                            <ul class="dep3">
+                                <li><strong>PREMIUM</strong></li>
+                                <li><a href="#">CHANNEL</a></li>
+                                <li><a href="#">LEVELS</a></li>
+                                <li><a href="#">INTERVIEW</a></li>
+                                <li><a href="#">BRAND</a></li>
+                            </ul>
+                            <div class="pic">
+                                <img src="img/community/bg3.jpg">
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="community.html">COMMUNITY</a>
+                        <div class="gnb_2depth">
+                            <ul class="dpe1">
+                                <li><a href="#">NEW</a></li>
+                                <li><a href="#">BEST</a></li>
+                                <li><a href="#">ALL</a></li>
+                            </ul>
+                            <ul class="dep2">
+                                <li><strong>NOTICE</strong></li>
+                                <li><a href="#">GUIDES</a></li>
+                                <li><a href="#">FAQ</a></li>
+                                <li><a href="#">COMMUITY</a></li>
+                                <li><a href="#">BRAND</a></li>
+                            </ul>
+                            <ul class="dep3">
+                                <li><strong>NOTICE</strong></li>
+                                <li><a href="#">GUIDES</a></li>
+                                <li><a href="#">FAQ</a></li>
+                                <li><a href="#">COMMUITY</a></li>
+                                <li><a href="#">BRAND</a></li>
+                            </ul>
+                            <div class="pic">
+                                <img src="img/department/bg2.jpg">
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="gallery.html">GALLERY</a>
+                        <div class="gnb_2depth">
+                            <ul class="dpe1">
+                                <li><a href="#">NEW</a></li>
+                                <li><a href="#">BEST</a></li>
+                                <li><a href="#">ALL</a></li>
+                            </ul>
+                            <ul class="dep2">
+                                <li><strong>EXHIBITION</strong></li>
+                                <li><a href="#">PHOTOS</a></li>
+                                <li><a href="#">ART GALLERY</a></li>
+                                <li><a href="#">ARCHITECTURE</a></li>
+                                <li><a href="#">MAGAZINE</a></li>
+                            </ul>
+                            <ul class="dep3">
+                                <li><strong>EXHIBITION</strong></li>
+                                <li><a href="#">PHOTOS</a></li>
+                                <li><a href="#">ART GALLERY</a></li>
+                                <li><a href="#">ARCHITECTURE</a></li>
+                                <li><a href="#">MAGAZINE</a></li>
+                            </ul>
+                            <div class="pic">
+                                <img src="img/youtube/bg3.jpg">
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="location.html">LOCATION</a>
+                    </li>
+                </ul>
+            </nav>
+            <nav class="menuMo">
+                <h1>
+                    <a href="index.html">DECODLAB</a>
+                    <span>Architecture & Design</span>
+                </h1>
+                <ul id="gnbMo">
+                    <li>
+                        <a href="join.html">JOIN</a>
+                    </li>
+                    <li>
+                        <a href="department.html">DEPARTMENT</a>
+                    </li>
+                    <li>
+                        <a href="youtube.html">YOUTUBE</a>
+                    </li>
+                    <li>
+                        <a href="community.html">COMMUNITY</a>
+                    </li>
+                    <li>
+                        <a href="gallery.html">GALLERY</a>
+                    </li>
+                    <li>
+                        <a href="location.html">LOCATION</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <section class="content join">
+        <div class="sub_visual"></div>
+        <div class="inner">
+            <h1>JOIN<h1>
+            <!-- 약관동의  -->
+            <div class="top_txt">
+                <span>약관동의</span>
+            </div>
+            <div class="all_agree">
+                <input type="checkbox" name="all_agree" id="all_agree">
+                <label for="all_agree">전체 약관에 동의합니다.</label>
+            </div>
+            <div class="wrap">
+                <dl>
+                    <dt>
+                        <input type="checkbox" name="" id="">
+                        <label for="check1">
+                            <span class="spot">[필수]</span> 사이트 이용약관
+                        </label>
+                        <a href="#" class="btn">더보기 버튼</a>
+                    </dt>
+                    <dd>
+                        <div class="scroll_txt">
+                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. A, consectetur cupiditate? Voluptatibus, error? Sint corporis vitae incidunt nisi, repellendus quidem animi harum ab alias quas quasi est. Voluptas fugit ad dolores dolorem consequuntur. Eligendi unde nulla vitae, ut debitis illum voluptas officia dolorum. Perferendis excepturi ratione eos hic sint veniam perspiciatis sunt ducimus voluptatum non reiciendis dolores eveniet illo ea corrupti inventore expedita voluptas, odit illum nesciunt eligendi ipsum eaque iusto libero! Reprehenderit eius perspiciatis nemo soluta. Itaque eum dolor repellendus! Quod, a! Beatae cum autem quibusdam quia. Neque aliquam dicta deserunt, quis soluta repudiandae quaerat odio sed dignissimos alias nam accusamus omnis. Quos, vel. Sequi repudiandae suscipit laudantium eveniet tempore non neque perferendis eius voluptates reprehenderit ratione fugit corrupti nisi nemo nostrum, dolor incidunt perspiciatis qui quo? Tempora distinctio tenetur ipsum mollitia optio ut? Illo veniam, sint quis porro, consectetur enim quod est ipsam, similique sequi vero dolorum laudantium magnam esse eaque quae ex labore doloremque facilis. Aliquid culpa repudiandae natus aperiam facere placeat inventore, optio quasi ad fuga, voluptatibus rem voluptatem earum eveniet nostrum eaque itaque, vel voluptates rerum quisquam? Exercitationem veniam molestias sint. Tenetur, atque, provident eius voluptate ducimus maiores quam expedita itaque amet hic, possimus pariatur.
+                        </div>
+                    </dd>
+                    <dt>
+                        <input type="checkbox" name="" id="">
+                        <label for="check1">
+                            <span class="spot">[필수]</span> 전자상거래 이용약관
+                        </label>
+                        <a href="#" class="btn">더보기 버튼</a>
+                    </dt>
+                    <dd>
+                        <div class="scroll_txt">
+                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. A, consectetur cupiditate? Voluptatibus, error? Sint corporis vitae incidunt nisi, repellendus quidem animi harum ab alias quas quasi est. Voluptas fugit ad dolores dolorem consequuntur. Eligendi unde nulla vitae, ut debitis illum voluptas officia dolorum. Perferendis excepturi ratione eos hic sint veniam perspiciatis sunt ducimus voluptatum non reiciendis dolores eveniet illo ea corrupti inventore expedita voluptas, odit illum nesciunt eligendi ipsum eaque iusto libero! Reprehenderit eius perspiciatis nemo soluta. Itaque eum dolor repellendus! Quod, a! Beatae cum autem quibusdam quia. Neque aliquam dicta deserunt, quis soluta repudiandae quaerat odio sed dignissimos alias nam accusamus omnis. Quos, vel. Sequi repudiandae suscipit laudantium eveniet tempore non neque perferendis eius voluptates reprehenderit ratione fugit corrupti nisi nemo nostrum, dolor incidunt perspiciatis qui quo? Tempora distinctio tenetur ipsum mollitia optio ut? Illo veniam, sint quis porro, consectetur enim quod est ipsam, similique sequi vero dolorum laudantium magnam esse eaque quae ex labore doloremque facilis. Aliquid culpa repudiandae natus aperiam facere placeat inventore, optio quasi ad fuga, voluptatibus rem voluptatem earum eveniet nostrum eaque itaque, vel voluptates rerum quisquam? Exercitationem veniam molestias sint. Tenetur, atque, provident eius voluptate ducimus maiores quam expedita itaque amet hic, possimus pariatur.
+                        </div>
+                    </dd>
+                    <dt>
+                        <input type="checkbox" name="" id="">
+                        <label for="check1">
+                            <span class="spot">[필수]</span> 개인정보 수집 및 이용 동의
+                        </label>
+                        <a href="#" class="btn">더보기 버튼</a>
+                    </dt>
+                    <dd>
+                        <div class="scroll_txt">
+                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. A, consectetur cupiditate? Voluptatibus, error? Sint corporis vitae incidunt nisi, repellendus quidem animi harum ab alias quas quasi est. Voluptas fugit ad dolores dolorem consequuntur. Eligendi unde nulla vitae, ut debitis illum voluptas officia dolorum. Perferendis excepturi ratione eos hic sint veniam perspiciatis sunt ducimus voluptatum non reiciendis dolores eveniet illo ea corrupti inventore expedita voluptas, odit illum nesciunt eligendi ipsum eaque iusto libero! Reprehenderit eius perspiciatis nemo soluta. Itaque eum dolor repellendus! Quod, a! Beatae cum autem quibusdam quia. Neque aliquam dicta deserunt, quis soluta repudiandae quaerat odio sed dignissimos alias nam accusamus omnis. Quos, vel. Sequi repudiandae suscipit laudantium eveniet tempore non neque perferendis eius voluptates reprehenderit ratione fugit corrupti nisi nemo nostrum, dolor incidunt perspiciatis qui quo? Tempora distinctio tenetur ipsum mollitia optio ut? Illo veniam, sint quis porro, consectetur enim quod est ipsam, similique sequi vero dolorum laudantium magnam esse eaque quae ex labore doloremque facilis. Aliquid culpa repudiandae natus aperiam facere placeat inventore, optio quasi ad fuga, voluptatibus rem voluptatem earum eveniet nostrum eaque itaque, vel voluptates rerum quisquam? Exercitationem veniam molestias sint. Tenetur, atque, provident eius voluptate ducimus maiores quam expedita itaque amet hic, possimus pariatur.
+                        </div>
+                    </dd>
+                    <dt>
+                        <input type="checkbox" name="" id="">
+                        <label for="check1">
+                            <span>[선택]</span> 개인정보 수집 및 이용 동의
+                        </label>
+                        <a href="#" class="btn">더보기 버튼</a>
+                    </dt>
+                    <dd>
+                        <div class="scroll_txt">
+                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. A, consectetur cupiditate? Voluptatibus, error? Sint corporis vitae incidunt nisi, repellendus quidem animi harum ab alias quas quasi est. Voluptas fugit ad dolores dolorem consequuntur. Eligendi unde nulla vitae, ut debitis illum voluptas officia dolorum. Perferendis excepturi ratione eos hic sint veniam perspiciatis sunt ducimus voluptatum non reiciendis dolores eveniet illo ea corrupti inventore expedita voluptas, odit illum nesciunt eligendi ipsum eaque iusto libero! Reprehenderit eius perspiciatis nemo soluta. Itaque eum dolor repellendus! Quod, a! Beatae cum autem quibusdam quia. Neque aliquam dicta deserunt, quis soluta repudiandae quaerat odio sed dignissimos alias nam accusamus omnis. Quos, vel. Sequi repudiandae suscipit laudantium eveniet tempore non neque perferendis eius voluptates reprehenderit ratione fugit corrupti nisi nemo nostrum, dolor incidunt perspiciatis qui quo? Tempora distinctio tenetur ipsum mollitia optio ut? Illo veniam, sint quis porro, consectetur enim quod est ipsam, similique sequi vero dolorum laudantium magnam esse eaque quae ex labore doloremque facilis. Aliquid culpa repudiandae natus aperiam facere placeat inventore, optio quasi ad fuga, voluptatibus rem voluptatem earum eveniet nostrum eaque itaque, vel voluptates rerum quisquam? Exercitationem veniam molestias sint. Tenetur, atque, provident eius voluptate ducimus maiores quam expedita itaque amet hic, possimus pariatur.
+                        </div>
+                    </dd>
+                </dl>
+            </div>
+            <!-- 회원정보 form, table -->
+            <form action="/" metod="get" id="myForm">
+                <fieldset>
+                    <legend class="h">회원정보 입력 페이지</legend>
+                    <div class="top_txt">
+                        <span>회원정보</span>
+                    </div>
+                    <table summary="회원의 이름,아이디,비밀번호,이메일,휴대폰 번호 입력 양식">
+                        <caption class="h">회원정보 입력양식 테이블</caption>
+                        <tr>
+                            <th scope="row">
+                                <label for="name">이름</label>
+                            </th>
+                            <td>
+                                <input type="text" name="name" id="name" placeholder="한글,영문,숫자만 입력해주세요">
+                            </td>
+                        </tr>
+                        <tr>
+                            <th scope="row">
+                                <label for="userid">아이디</label>
+                            </th>
+                            <td>
+                                <input type="text" name="userid" id="userid" placeholder="아이디를 입력해주세요(영문,숫자 사용 5~20자)">
+                            </td>
+                        </tr>
+                        <tr>
+                            <th scope="row">
+                                <label for="pwd">비밀번호</label>
+                            </th>
+                            <td>
+                                <input type="password" name="pwd" id="pwd" placeholder="비밀번호를 입력해주세요.(영문,숫자,특수문자를 포함하여 8~20자)">
+                            </td>
+                        </tr>
+                        <tr>
+                            <th scope="row">
+                                <label for="pwd_check">비밀번호 확인</label>
+                            </th>
+                            <td>
+                                <input type="password" name="pwd_check" id="pwd_check" placeholder="비밀번호를 재입력해 주세요.">
+                            </td>
+                        </tr>
+                        <tr>
+                            <th scope="row">
+                                <label for="email">이메일</label>
+                            </th>
+                            <td>
+                                <input type="text" name="email" id="email" class="txt_box" placeholder="이메일 주소를 입력해 주세요.">
+                                <select name="email" id="emailHost">
+                                    <option value="">직접입력</option>
+                                    <option value="naver">@naver.com</option>
+                                    <option value="daum">@hannail.net</option>
+                                    <option value="nate">@nate.com</option>
+                                    <option value="google">@gmail.com</option>
+                                </select>
+                                <a href="#" class="btn">인증번호 요청</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th scope="row">
+                                <label for="number">휴대폰 번호</label>
+                            </th>
+                            <td>
+                                <input type="number" name="number" id="number" placeholder="휴대폰 번호를 '-'없이 입력해 주세요.">
+                                <a href="#" class="btn">인증번호 요청</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th colspan="2">
+                                <input type="reset" value="취소">
+                                <input type="submit" value="가입하기">
+                            </th>
+                        </tr>
+                    </table>
+                </fieldset>
+            </form>
+        </div>
+    </section>
+    <footer id="footer_sub">
+        <div class="inner">
+            <ul class="linkCompany">
+                <li><a href="#">회사소개</a></li>
+                <li><a href="#">이용약관</a></li>
+                <li><a href="#">개인정보처리방침</a></li>
+                <li><a href="#">사업자정보확인</a></li>
+                <li><a href="#">고객센터</a></li>
+                <li><a href="#">사이트맵</a></li>
+            </ul>
+            <ul class="linkSns">
+                <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                 <li><a href="#"><i class="fab fa-youtube"></i></a></li>
+                 <li><a href="#"><i class="fab fa-instagram-square"></i></a></li>
+                 <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+            </ul>
+        </div>
+        <div class="innerBt">
+            <div class="footerBox">
+                <div class="leftBox">
+                    <div class="logo">
+                        <h1>LAB</h1>
+                    </div>
+                    <div class="cs">
+                        <i class="far fas fas fa-phone-volume"></i>
+                        <div class="csBox">
+                            온라인몰 고객센터<br>
+                            <strong>080-332-0855</strong>
+                        </div>
+                        <div class="csTime">
+                            운영시간:09:00 ~ 17:00 [주말,공휴일 휴무]<br>
+                            점심시간:12:00
+                        </div>
+                    </div>
+                    <address>
+                        상호명 : (주)카버코리아｜사업자등록번호:105-87-62694｜통신판매업신고번호:2015-서울마포-1855호｜TEL:080-332-0855<br>
+                        주소 : 서울특별시 마포구 토정로 31길 81(대흥동,카버글로번 1관)
+                        <p>&copy; 2021 DECODELAB ALL RIGHT RESEVED.</p>
+                    </address>
+                </div>
+                <div class="rightBox">
+                    <select id="familySite">
+                        <option value>FAMILY SITE</option>
+                        <option value="Brand">Brand site</option>
+                        <option value="Brand2">Brand2 site</option>
+                    </select>
+                    <div class="service">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad nulla modi corrupti mollitia, alias maiores reiciendis iste aut sequi magnam</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
