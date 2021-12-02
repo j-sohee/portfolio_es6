@@ -26,35 +26,48 @@ btnCall.onclick = function(e){
     menuMo.classList.toggle("on");
 }
 //main scroll
-const $boxs = $(".myScroll");
-const $btns = $("#navi li");
+const boxs = document.querySelectorAll(".myScroll");
+const btns = document.querySelectorAll("#navi li");
+const btns_arr = Array.from(btns);
 let posArr = [];
-let len = $btns.length;
+let len = boxs.length;
 let baseLine = -300;
 
-for(let i=0; i<len; i++){
-    posArr.push($boxs.eq(i).offset().top);
-}
+setPos();
 
-$(window).on("resize", function(){
-    posArr = [];
-    for(let i=0; i<len; i++){
-        posArr.push($boxs.eq(i).offset().top);
-    }
+window.addEventListener("scorll", e=>{
+    let scroll = window.scrollY || window.pageYOffset;
+    boxs.forEach((el,index)=>{
+        if(scroll >= posArr[index] + baseLine){
+           
+
+            btns[index].classList.add("on");
+            boxs[index].classList.add("on");
+        }
+    })
 })
 
-$(window).on("scroll", function(){
-    let scroll = $(this).scrollTop();
-    for(let i=0; i<len; i++){
-        if(scroll >= posArr[i] +baseLine){
-            $btns.children("a").removeClass("on");
-            $btns.eq(i).children("a").addClass("on");
-
-            $boxs.removeClass("on");
-            $boxs.eq(i).addClass("on");
+btns.forEach((el,index)=>{
+    el.addEventListener("click", e=>{
+        new Anim(window,{
+            prop : "scroll",
+            value : posArr[index],
+            duration:500
+        })
+        for(let el of btns){
+            el.classList.remove("on");
         }
+        e.currentTarget.classList.add("on");
+    })
+})
+
+function setPos(){
+    posArr=[];
+    for(let el of boxs){
+        posArr.push(el.offsetTop);
     }
-});
+}
+
 
 //navi버튼을 클릭했을 때
 $("#navi li a").on("click", function(e){
@@ -157,7 +170,6 @@ $("#navi li a").on("click", function(e){
 const popup = document.querySelector("#popup");
 const btnClose = popup.querySelector(".close");
 const isCookie = document.cookie.indexOf("today=done");
-let isOn;
 
 if(isCookie == -1){
     popup.style.display = "block";

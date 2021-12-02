@@ -840,11 +840,13 @@ $mobile : 539px;
             border-radius: 5px;
             background:#aaa;
                 transition:0.5s; 
-                &.on{
-                    background:#111;
-                    height:60px;
-                } 
         }
+        &.on{
+            a{
+                background:#111;
+                height:60px;
+            }
+        } 
     }
 }
 

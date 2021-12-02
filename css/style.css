@@ -2850,9 +2850,9 @@ fieldset {
       border-radius: 5px;
       background: #aaa;
       transition: 0.5s; }
-      #navi li a.on {
-        background: #111;
-        height: 60px; }
+    #navi li.on a {
+      background: #111;
+      height: 60px; }
 
 #popup {
   width: 100%;
