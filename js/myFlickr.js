@@ -1,223 +1,97 @@
+const main = document.querySelector("section");
+const frame = document.querySelector("#gallery"); 
+const input =document.querySelector(".search");
+const btn = document.querySelector("button");
+const loading = document.querySelector(".loading");
+const base = "https://www.flickr.com/services/rest/?";
+const method1 = "flickr.people.getPhotos";
+const method2 = "flickr.photos.search";
+const user_id = "194106842@N02";
+const key = "c28561608d1c0e9f7db60ecfda79bf27";
+const per_page = 50; 
+const format = "json"; 
 
-class Myflickr{
-    constructor(options){
-        this.init(options);
-        this.bindingEvent();
-    }
-    
-    init(options){
-        this.gallery = $(options.frame);
-        this.search = $(options.searchFrame);
-        this.searchBtn = this.search.find("button");
-        this.input = this.search.find("input");
-        this.userId = options.user_id;
-        this.apiKey = options.api_key;
-        this.count = options.count;
-        this.type = options.type;
-        this.logo = $(options.title);
-    }
-    
-    bindingEvent(){
-        this.getList({
-            type:this.type,
-            user_id: this.userId
-        })
-        
-        this.searchBtn.on("click", ()=>{
-        
-            let inputs = this.input.val();
-        
-            if(!inputs){
-                alert("검색어를 입력하세요");
-                return;
-            }
-        
-            this.gallery.removeClass("on");
-            $(".loading").removeClass("off");
-        
-            this.input.val("");
-    
-            this.getList({
-                type:"search",
-                tag : inputs
-            });
-    
-        });
+const url1 = `${base}method=${method1}&api_key=${key}&user_id=${user_id}&per_page=${per_page}&format=${format}&nojsoncallback=1`;
 
-        this.logo.on("click", ()=>{
+callData(url1);
 
-            this.gallery.removeClass("on");
-            $(".loading").removeClass("off");
+function callData(url){
+    frame.innerHTML="";
+    loading.classList.remove("off");
+    frame.classList.remove("on");
 
-            this.getList({
-                type:"userid",
-                user_id:this.userId
-            })
-        })
-        
-        $(window).on("keypress", e=>{
-            if(e.keyCode == 13){
-        
-                let inputs = this.input.val();
-        
-                if(!inputs){
-                    alert("검색어를 입력하세요");
-                    return;
-                }
-                this.gallery.removeClass("on");
-                $(".loading").removeClass("off");
-        
-               
-                this.input.val("");
-                this.getList({
-                    type:"search",
-                    tag : inputs
-                });
-            }
-        })
-        
-        $("body").on("click", this.gallery.selector+" article a", e=>{
-            e.preventDefault();
-        
-            let imgSrc = $(e.currentTarget).attr("href");
-        
-            $("body").append(
-                $("<div class='pop'>")
-                    .append(
-                        $("<img>").attr({src : imgSrc }),
-                        $("<span>").text("close")
-                    )
-            )
-        })
-        
-        $("body").on("click", ".pop span", ()=>{
-            $(".pop").remove();
-        })
+    fetch(url)
+    .then(data=>{
+       let result = data.json(); 
+       return result; 
+    })
+    .then(json=>{   
+       let items = json.photos.photo;   
+       createList(items);
+       delayLoading();
+       
+    })
+    
+ }
+
+ function createList(items){
+    let htmls =""; 
+    
+    //배열의 갯수만큼 반복
+    items.map(data=>{
+       console.log(data);      
+ 
+       let imgSrcBig = `https://live.staticflickr.com/${data.server}/${data.id}_${data.secret}_b.jpg`;
+       let imgSrc = `https://live.staticflickr.com/${data.server}/${data.id}_${data.secret}_b.jpg`;
+ 
+       htmls+=`
+             <li class="item">
+                <div>
+                    <h2>${data.title}</h2>
+                    <a href="${imgSrcBig}">
+                        <img class="thumb" src="${imgSrc}" alt="">
+                    </a>
+                    <p>${data.owner}</p>
+                    <span>Lorem ipsum dolor sit.</span>
+                </div>
+             </li>
+       `;
+    }); 
+ 
+    frame.innerHTML = htmls; 
+ }
+
+ function delayLoading(){
+    //동적으로 생성된 이미지의 전체 갯수를 구함 
+    const imgs = frame.querySelectorAll("img"); 
+    const len = imgs.length; 
+    let count = 0; 
+ 
+    //이미지 갯수만큼 반복을 돌면서 
+    for(let el of imgs){
+       //각 이미지가 로딩이 완료되면 1씩 count값 증가 
+       el.onload =()=>{
+          count++; 
+ 
+          //모든 이미지가 로딩이 완료되면 isoLayout 함수 호출 
+          if(count === len) isoLayout(); 
+       }
+
+       let thumb = el.closest(".item").querySelector(".thumb");
+       thumb.onerror = e =>{
+          e.currentTarget.closest(".item").querySelector(".thumb").setAttribute("src", "default.jpg"); 
+       }
+
     }
-    
-    
-    
-    getList(opt){
-        let result_opt = [];
-    
-        if(opt.type == "interesting"){
-            result_opt = {
-                url : "https://www.flickr.com/services/rest/?method=flickr.interestingness.getList",
-                dataType : "json",
-                data : {
-                    api_key : this.apiKey,
-                    per_page : this.count,
-                    format: "json",
-                    nojsoncallback:1,
-                    privacy_filter:1,
-                }
-            }
-        }
-    
-        if(opt.type == "search"){
-            result_opt = {
-                url : "https://www.flickr.com/services/rest/?method=flickr.photos.search",
-                dataType : "json",
-                data : {
-                    api_key : "c28561608d1c0e9f7db60ecfda79bf27",
-                    per_page : 20,
-                    format: "json",
-                    nojsoncallback:1,
-                    privacy_filter:1,
-                    tags : opt.tag
-                }
-            }
-        }
-    
-        if(opt.type == "userid"){
-            result_opt = {
-                url:"https://www.flickr.com/services/rest/?method=flickr.people.getPhotos", 
-                dataType:"json", 
-                data:{
-                    api_key:"c28561608d1c0e9f7db60ecfda79bf27",
-                    per_page:20, 
-                    format:"json",
-                    nojsoncallback:1, 
-                    privacy_filter : 1, 
-                    user_id : opt.user_id
-                }
-            }
-        }
-    
-        $.ajax(result_opt)
-        .success(data=>{
-    
-            let items = data.photos.photo;
-    
-            this.createList(items);
-            this.loadImg();
-        })
-        
-        .error(err=>{
-            console.err("데이터를 호출하는데 실패했습니다");
-        })
-    } 
-    
-    createList(items){
-    
-        this.gallery.empty();
-    
-        $(items).each((index,data)=>{
-        
-            let text = data.title; 
-            if(!data.title){
-                text = "No description in this photo";
-            }
-    
-            this.gallery.append(
-                $("<article>")
-                    .append(
-                        $("<div class='list'>")
-                            .append(
-                                $("<div class='txt'>")
-                            .append(
-                                $("<p>").text("CATEGORY"),
-                                $("<span>").text(data.owner),
-                                $("<h2>").text(text)
-                            ),
-                            $("<a>").attr({
-                                href : "https://live.staticflickr.com/"+data.server+"/"+data.id+"_"+data.secret+"_b.jpg"
-                                })
-                                .append(
-                                    $("<img>").attr({ src : "https://live.staticflickr.com/"+data.server+"/"+data.id+"_"+data.secret+"_b.jpg" })
-                                )
-                            )
-                        
-                    )
-            )
-        });
-    }
-    
-    loadImg(){
-        let imgNum = 0;
-        let photo = this.gallery.find("article").length;
-    
-        this.gallery.find("article img").each((index,data)=>{
-    
-            data.onload = ()=>{
-                imgNum++;
-                console.log(imgNum);
-    
-                if(imgNum === photo){
-    
-                    $(".loading").addClass("off");
-    
-                    new Isotope(this.gallery.selector, {
-                        itemSelector : this.gallery.selector+" article",
-                        columnWidth : this.gallery.selector+" article",
-                        percentPosition : true,
-                        transitionDuration : "0.5s"
-                    });
-    
-                    this.gallery.addClass("on");
-                    
-                }
-            }
-        });
-    }
+ }
+
+function isoLayout(){
+    loading.classList.add("off");
+    frame.classList.add("on"); 
+
+    new Isotope("#gallery",{
+        itemSelector :".item", 
+        columnWidth : ".item", 
+        transitionDuration : "0.5s"
+    })
 }
