@@ -29,7 +29,7 @@ $mobile : 539px;
             position:absolute; top:50%; left:0;
             transform:translateY(-50%);
             a{
-                font:32px/1 $font; color:#333;
+                font:28px/1 $font; color:#333;
             }
         }
         .menuWeb{
@@ -51,14 +51,15 @@ $mobile : 539px;
         }
     }
 }
-section{
+#brand{
     width:100%; height:800px;
     background:#efefef;
 }
 
 #footer{
     width:100%; 
-    background:#111; padding:50px;
+    background:#111; padding:80px;
+    border-top:1px solid #999;
     .inner{
         width:1180px; margin:0 auto; position:relative;
         .wrap{

@@ -10,47 +10,14 @@
             &::after{
                 content:''; display:block; clear:both;
             }
-            .top{
-                width:100%; text-align:center;
-                margin-bottom:40px;
-                h2{
-                    font:700 32px/1 $font; color:#333;
-                    padding-bottom:20px;
-                    margin-bottom:20px; letter-spacing: 1px;
-                    position:relative;
-                    &::after{
-                        content:''; display:block;
-                        width:23%; height:1px; background:#666;
-                        position:absolute; left:50%; bottom:0;
-                        transform:translateX(-50%);
-                    }
-                }
-                p{
-                    display:inline-block;
-                    width:90%;
-                    font: 15px/1.5 $font; color:#555;
-                }
-            }
             article{
-                width:580px; height:330px;
+                width:580px; height:200px;
                 margin-right:20px; float:left;
                 background:#fff; margin-bottom:20px;
                 position:relative;
-
-                &:hover{
-                    a{
-                        img{
-                            filter: grayscale(100%);
-                        }
-                    }
-                    .btns{
-                        opacity: 1;
-                    }
-                }
-
                 >a{
-                    display:block;
-                    width:100%; height:250px; overflow:hidden;
+                    width:50%; height:100%; overflow:hidden;
+                    float:left;
                     img{
                         width:100%; height:100%; object-fit: cover;
                     }
@@ -58,22 +25,9 @@
 
                 &:nth-of-type(2n){ margin-right:0px; }
 
-                .btns{
-                    width:100%; height:250px; position:absolute;
-                    top:0; left:0; opacity:0; transition:0.5s;
-                    background-color: rgba(0,0,0,0.6);
-                    >a{
-                        display:block;
-                        width:120px; height:30px; background:#eee;
-                        font:16px/30px $font; color:#333; text-align:center;
-                        position:absolute; top:50%; left:50%;
-                        transform:translate(-50%,-50%); opacity: 1;
-                       
-                    }
-                }
                 .con{
-                    width:100%; position:relative;
-                    margin-top:10px;
+                    width:50%; position:relative;
+                    margin-top:10px; float:left;
 
                     h3{
                         display:block;
@@ -107,72 +61,4 @@
     }
 }
 
-@media screen and (max-width:$tablet){
-/*youtube---------------------------------*/
-.youtube{
-    .inner{
-        width:100%; padding:0 20px;
-        #vidGallery{
-            .top{
-                h2{
-                    &::after{ width:40vw; }
-                }
-            }
-            
 
-            article{
-                width:100%; height:350px; margin-right:0;
-
-            }
-        }
-    }
-}
-
-.vidpop{
-    padding:80px 20px;
-    iframe{
-        width:100%; height:450px;
-    }
-}
-
-}
-
-@media screen and (max-width:$mobile){
-/*youtube---------------------------------*/
-.youtube{
-    padding:0 0 80px 0;
-    .inner{
-        width:100%; padding:0 20px;
-        #vidGallery{
-            h1{ font-size:28px; }
-                        
-            .top{
-                h2{ font-size:26px; }
-                p{
-                    width:100%;
-                    font: 13px/1.5 $font; color:#555;
-                }
-            }
-            article{
-                width:100%; margin-right:0;
-                >a img{
-                    transform:scale(1.35);
-                }
-                .btns>a{ font-size:14px; }
-                .con{
-                    h2{ font-size:16px; }
-                    p{ font-size:13px; }
-                }
-            }
-        }
-    }
-}
-.vidpop{
-    padding:80px 20px;
-    iframe{
-        width:100%; height:300px;
-    }
-}
-    
-}
-    

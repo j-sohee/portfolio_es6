@@ -23,237 +23,37 @@ fieldset {
 /*header_sub--------------------------*/
 #header_sub {
   width: 100%;
-  border-bottom: 1px solid #ddd;
   position: relative;
-  z-index: 5; }
+  border-bottom: 1px solid #ddd; }
   #header_sub .inner {
     width: 1180px;
-    height: 135px;
+    height: 80px;
     margin: 0 auto;
     position: relative; }
-    #header_sub .inner > h1 {
+    #header_sub .inner h1 {
       position: absolute;
-      top: 10px;
-      left: 50%;
-      transform: translateX(-50%); }
-      #header_sub .inner > h1 a {
-        font: 26px/1 "Noto Sans", "Noto Sans KR";
-        color: #111; }
-    #header_sub .inner .btnCall {
-      width: 20px;
-      height: 18px;
-      position: absolute;
-      top: 32px;
+      top: 50%;
       left: 0;
-      transition: 0.5s; }
-      #header_sub .inner .btnCall::before {
-        content: '';
-        display: block;
-        width: 100%;
-        height: 2px;
-        position: absolute;
-        top: 0;
-        left: 0;
-        background: #555;
-        transition: 0.5s; }
-      #header_sub .inner .btnCall::after {
-        content: '';
-        display: block;
-        width: 100%;
-        height: 2px;
-        position: absolute;
-        bottom: 0;
-        left: 0;
-        background: #555;
-        transition: 0.5s; }
-      #header_sub .inner .btnCall span {
-        display: block;
-        width: 100%;
-        height: 2px;
-        background: #555;
-        position: absolute;
-        top: 50%;
-        left: 0;
-        transform: translateY(-50%);
-        text-indent: -9999px;
-        transition: 0.5s; }
-      #header_sub .inner .btnCall.on {
-        z-index: 11; }
-        #header_sub .inner .btnCall.on::before {
-          background: #999;
-          transform: rotate(45deg);
-          top: 50%;
-          margin-top: -1px; }
-        #header_sub .inner .btnCall.on::after {
-          transform: rotate(-45deg);
-          bottom: 50%;
-          margin-bottom: -1px;
-          background: #999; }
-        #header_sub .inner .btnCall.on span {
-          background: #999;
-          transform: translateX(100%);
-          opacity: 0; }
-    #header_sub .inner .util {
-      position: absolute;
-      top: 31px;
-      left: 31px; }
-      #header_sub .inner .util a {
-        display: inline-block;
-        width: 20px;
-        height: 20px;
-        margin-right: 5px; }
-        #header_sub .inner .util a img {
-          width: 100%;
-          height: 100%; }
-    #header_sub .inner .menuWeb {
-      width: 100%; }
-      #header_sub .inner .menuWeb #gnb {
-        width: 100%;
-        font-size: 0;
-        position: absolute;
-        bottom: 0;
-        left: 0;
-        border-top: 1px solid #ddd; }
-        #header_sub .inner .menuWeb #gnb::after {
-          content: '';
-          display: block;
-          clear: both; }
-        #header_sub .inner .menuWeb #gnb > li {
-          width: 20%;
-          height: 60px;
-          float: left;
-          font-size: 0; }
-          #header_sub .inner .menuWeb #gnb > li > a {
-            display: block;
-            width: 100%;
-            height: 100%;
-            font: 14px/60px "Noto Sans", "Noto Sans KR";
-            color: #555;
-            text-align: center;
-            transition: 0.5s; }
-          #header_sub .inner .menuWeb #gnb > li .gnb_2depth {
-            width: 1180px;
-            height: 220px;
-            padding-top: 20px;
-            position: absolute;
-            top: 60px;
-            right: 0;
-            font-size: 0;
-            background: #fff;
-            display: none; }
-            #header_sub .inner .menuWeb #gnb > li .gnb_2depth::before {
-              content: '';
-              display: block;
-              width: 100%;
-              height: inherit;
-              background: #fff;
-              position: absolute;
-              top: 0;
-              left: -100%; }
-            #header_sub .inner .menuWeb #gnb > li .gnb_2depth::after {
-              content: '';
-              display: block;
-              width: 100%;
-              height: inherit;
-              background: #fff;
-              position: absolute;
-              top: 0;
-              right: -100%; }
-            #header_sub .inner .menuWeb #gnb > li .gnb_2depth > .dpe1 {
-              width: 180px;
-              text-align: center;
-              float: left;
-              font-size: 0; }
-              #header_sub .inner .menuWeb #gnb > li .gnb_2depth > .dpe1 > li {
-                width: 100%;
-                padding: 0 0 15px 0; }
-                #header_sub .inner .menuWeb #gnb > li .gnb_2depth > .dpe1 > li a {
-                  font: 14px/1 "Noto Sans", "Noto Sans KR";
-                  color: #333; }
-            #header_sub .inner .menuWeb #gnb > li .gnb_2depth > .dep2 {
-              width: 180px;
-              float: left; }
-              #header_sub .inner .menuWeb #gnb > li .gnb_2depth > .dep2 > li {
-                width: 100%;
-                padding: 0 0 15px 40px;
-                border-left: 1px solid #ddd; }
-                #header_sub .inner .menuWeb #gnb > li .gnb_2depth > .dep2 > li strong {
-                  font: 700 14px/1 "Noto Sans", "Noto Sans KR";
-                  color: #333; }
-                #header_sub .inner .menuWeb #gnb > li .gnb_2depth > .dep2 > li a {
-                  font: 13px/1 "Noto Sans", "Noto Sans KR";
-                  color: #333; }
-            #header_sub .inner .menuWeb #gnb > li .gnb_2depth > .dep3 {
-              width: 250px;
-              float: left; }
-              #header_sub .inner .menuWeb #gnb > li .gnb_2depth > .dep3 > li {
-                width: 100%;
-                padding: 0 0 15px 40px; }
-                #header_sub .inner .menuWeb #gnb > li .gnb_2depth > .dep3 > li strong {
-                  font: 700 14px/1 "Noto Sans", "Noto Sans KR";
-                  color: #333; }
-                #header_sub .inner .menuWeb #gnb > li .gnb_2depth > .dep3 > li a {
-                  font: 13px/1 "Noto Sans", "Noto Sans KR";
-                  color: #333; }
-            #header_sub .inner .menuWeb #gnb > li .gnb_2depth .pic {
-              width: 500px;
-              float: left; }
-              #header_sub .inner .menuWeb #gnb > li .gnb_2depth .pic img {
-                width: 100%;
-                height: 150px;
-                object-fit: cover; }
-    #header_sub .inner .user {
+      transform: translateY(-50%); }
+      #header_sub .inner h1 a {
+        font: 28px/1 "Noto Sans", "Noto Sans KR";
+        color: #333; }
+    #header_sub .inner .menuWeb #gnb {
       position: absolute;
       right: 0;
-      top: 35px; }
-      #header_sub .inner .user a {
-        display: inline-block;
-        width: 15px;
-        height: 15px;
-        margin-left: 5px; }
-        #header_sub .inner .user a img {
-          width: 100%;
-          height: 100%; }
-    #header_sub .inner .menuMo {
-      width: 100%;
-      height: 100vh;
-      padding: 100px 0;
-      background: #111;
-      position: fixed;
-      top: -100%;
-      left: 0;
-      z-index: 10;
-      opacity: 0;
-      transition: 0.5s;
-      margin: 0 auto;
-      text-align: center; }
-      #header_sub .inner .menuMo > h1 {
-        padding-bottom: 20px; }
-        #header_sub .inner .menuMo > h1 a {
-          display: block;
-          font: 40px/1 "Noto Sans", "Noto Sans KR";
-          color: #fff; }
-        #header_sub .inner .menuMo > h1 span {
+      top: 50%;
+      transform: translateY(-50%); }
+      #header_sub .inner .menuWeb #gnb::after {
+        content: '';
+        display: block;
+        clear: both; }
+      #header_sub .inner .menuWeb #gnb li {
+        float: left; }
+        #header_sub .inner .menuWeb #gnb li a {
+          display: inline-block;
           font: 14px/1 "Noto Sans", "Noto Sans KR";
-          color: #7588a0;
-          letter-spacing: 1px; }
-      #header_sub .inner .menuMo #gnbMo {
-        width: 100%;
-        height: 100%; }
-        #header_sub .inner .menuMo #gnbMo > li {
-          width: 100%; }
-          #header_sub .inner .menuMo #gnbMo > li a {
-            display: block;
-            width: 100%;
-            padding: 20px 0;
-            font: bold 46px/1 "Noto Sans", "Noto Sans KR";
-            color: #fff;
-            transition: 0.5s; }
-            #header_sub .inner .menuMo #gnbMo > li a:hover {
-              color: #7588a0; }
-      #header_sub .inner .menuMo.on {
-        top: 0;
-        opacity: 1; }
+          color: #333;
+          padding: 0 20px; }
 
 /*sub_page content--------------------------*/
 .content {
@@ -280,234 +80,72 @@ fieldset {
 /*footer_sub--------------------------*/
 #footer_sub {
   width: 100%;
-  padding-bottom: 100px;
-  border-top: 1px solid #ddd; }
+  background: #111;
+  padding: 80px;
+  border-top: 1px solid #999; }
   #footer_sub .inner {
     width: 1180px;
     margin: 0 auto;
     position: relative; }
-    #footer_sub .inner .linkCompany::after {
-      content: '';
-      display: block;
-      clear: both; }
-    #footer_sub .inner .linkCompany > li {
-      float: left; }
-      #footer_sub .inner .linkCompany > li > a {
-        display: inline-block;
-        padding: 20px 20px 20px 0;
-        font: 15px/1 "Noto Sans", "Noto Sans KR";
-        color: #333; }
-    #footer_sub .inner .linkSns {
-      position: absolute;
-      top: 13px;
-      right: 0; }
-      #footer_sub .inner .linkSns::after {
-        content: '';
-        display: block;
-        clear: both; }
-      #footer_sub .inner .linkSns li {
-        float: left; }
-        #footer_sub .inner .linkSns li a {
-          display: inline-block;
-          font-size: 20px;
-          padding-left: 30px;
-          color: #aaa; }
-  #footer_sub .innerBt {
-    width: 100%;
-    border-top: 1px solid #ddd; }
-    #footer_sub .innerBt .footerBox {
-      width: 1180px;
-      margin: 0 auto;
-      padding-top: 30px;
-      position: relative; }
-      #footer_sub .innerBt .footerBox::after {
-        content: '';
-        display: block;
-        clear: both; }
-      #footer_sub .innerBt .footerBox .leftBox {
-        width: 75%;
-        float: left; }
-        #footer_sub .innerBt .footerBox .leftBox .logo {
-          width: 15%;
-          float: left;
-          border-right: 1px solid #bbb; }
-          #footer_sub .innerBt .footerBox .leftBox .logo h1 {
-            font: 38px/43px "Noto Sans", "Noto Sans KR";
-            color: #333; }
-        #footer_sub .innerBt .footerBox .leftBox .cs {
-          width: 85%;
-          float: right;
-          padding-left: 60px; }
-          #footer_sub .innerBt .footerBox .leftBox .cs i {
-            float: left;
-            font-size: 32px;
-            line-height: 43px;
-            color: #444; }
-          #footer_sub .innerBt .footerBox .leftBox .cs .csBox {
-            float: left;
-            padding-left: 15px;
-            font: 14px/20px "Noto Sans", "Noto Sans KR";
-            color: #555; }
-            #footer_sub .innerBt .footerBox .leftBox .cs .csBox strong {
-              display: block;
-              font-size: 20px;
-              margin-top: 3px;
-              color: #333; }
-          #footer_sub .innerBt .footerBox .leftBox .cs .csTime {
-            float: left;
-            padding-left: 30px;
-            font: 14px/20px "Noto Sans", "Noto Sans KR";
-            color: #888;
-            margin-top: 3px; }
-        #footer_sub .innerBt .footerBox .leftBox address {
-          width: 100%;
-          float: left;
-          margin-top: 50px;
-          font: 12px/20px "Noto Sans", "Noto Sans KR";
-          color: #777; }
-          #footer_sub .innerBt .footerBox .leftBox address p {
-            margin-top: 20px;
-            color: #999; }
-      #footer_sub .innerBt .footerBox .rightBox {
-        width: 25%;
-        float: right; }
-        #footer_sub .innerBt .footerBox .rightBox select {
-          width: 100%;
-          height: 45px;
-          border: none;
-          border-bottom: 2px solid #555;
-          font: 16px/45px "Noto Sans", "Noto Sans KR";
-          color: #666; }
-        #footer_sub .innerBt .footerBox .rightBox .service {
-          width: 100%;
-          border: 1px solid #ddd;
-          margin-top: 40px;
-          padding: 10px 20px; }
-          #footer_sub .innerBt .footerBox .rightBox .service p {
-            font: 12px/18px "Noto Sans", "Noto Sans KR";
-            color: #999; }
-
-@media screen and (max-width: 1179px) {
-  /*header----------------------------------*/
-  #header_sub .inner {
-    width: 100%;
-    height: 80px;
-    font-size: 0; }
-    #header_sub .inner > h1 {
-      top: 50%;
-      transform: translate(-50%, -50%); }
-    #header_sub .inner .btnCall {
-      position: absolute;
-      top: 50%;
-      left: 20px;
-      transform: translateY(-50%); }
-    #header_sub .inner .util {
-      top: 50%;
-      left: 55px;
-      transform: translateY(-50%); }
-    #header_sub .inner .menuWeb #gnb {
-      display: none; }
-    #header_sub .inner .user {
-      top: 50%;
-      right: 20px;
-      transform: translateY(-50%); }
-    #header_sub .inner .menuMo h1 a {
-      margin-bottom: 10px; }
-
-  /*footer----------------------------------*/
-  #footer_sub .inner {
-    width: 100%;
-    padding: 0 20px; }
-    #footer_sub .inner .linkCompany {
-      display: none; }
-    #footer_sub .inner .linkSns {
-      width: 100%;
-      position: relative;
-      top: 0;
-      right: 20px; }
-      #footer_sub .inner .linkSns li {
-        float: right; }
-        #footer_sub .inner .linkSns li a {
-          padding: 10px 0 10px 30px; }
-  #footer_sub .innerBt {
-    padding: 0 20px; }
-    #footer_sub .innerBt .footerBox {
+    #footer_sub .inner .wrap {
       width: 100%; }
-      #footer_sub .innerBt .footerBox .leftBox {
-        width: 100%; }
-        #footer_sub .innerBt .footerBox .leftBox .logo {
-          width: 20%;
-          border-right: none; }
-          #footer_sub .innerBt .footerBox .leftBox .logo h1 {
-            font-size: 30px; }
-        #footer_sub .innerBt .footerBox .leftBox .cs {
-          width: 80%;
-          border-left: 1px solid #ddd;
-          padding-left: 60px; }
-          #footer_sub .innerBt .footerBox .leftBox .cs i {
-            font-size: 24px; }
-        #footer_sub .innerBt .footerBox .leftBox address {
-          margin-top: 20px; }
-      #footer_sub .innerBt .footerBox .rightBox {
-        width: 100%; }
-        #footer_sub .innerBt .footerBox .rightBox select {
+      #footer_sub .inner .wrap::after {
+        content: '';
+        display: block;
+        clear: both; }
+      #footer_sub .inner .wrap h1 {
+        width: 15%;
+        float: left;
+        font-size: 0; }
+        #footer_sub .inner .wrap h1 a {
+          font: 24px/1 "Noto Sans", "Noto Sans KR";
+          color: #fff; }
+      #footer_sub .inner .wrap .box {
+        width: 70%;
+        float: left; }
+        #footer_sub .inner .wrap .box ul {
+          width: 100%; }
+          #footer_sub .inner .wrap .box ul::after {
+            content: '';
+            display: block;
+            clear: both; }
+          #footer_sub .inner .wrap .box ul li {
+            float: left;
+            margin-bottom: 20px; }
+            #footer_sub .inner .wrap .box ul li a {
+              font: 14px/1 "Noto Sans", "Noto Sans KR";
+              color: #ccc;
+              padding-right: 20px; }
+        #footer_sub .inner .wrap .box address {
           width: 100%;
-          font-size: 14px;
-          margin-top: 20px; }
-        #footer_sub .innerBt .footerBox .rightBox .service {
-          margin-top: 20px; } }
-@media screen and (max-width: 539px) {
-  /*header----------------------------------*/
-  #header_sub .inner {
-    width: 100%;
-    height: 80px;
-    font-size: 0; }
-    #header_sub .inner h1 a {
-      font-size: 24px; }
-    #header_sub .inner .util {
-      display: none; }
-    #header_sub .inner .menuWeb #gnb {
-      display: none; }
-    #header_sub .inner .user {
-      display: none; }
-    #header_sub .inner .menuMo > h1 a {
-      font-size: 36px; }
-    #header_sub .inner .menuMo > h1 span {
-      font-size: 12px; }
-    #header_sub .inner .menuMo #gnbMo > li a {
-      font-size: 34px; }
-    #header_sub .inner .menuMo.on {
-      top: 0;
-      opacity: 1; }
-
-  /*footer----------------------------------*/
-  #footer_sub .inner {
-    width: 100%;
-    padding: 0 20px; }
-    #footer_sub .inner .linkCompany {
-      display: none; }
-    #footer_sub .inner .linkSns {
-      width: 100%;
-      position: relative;
-      top: 0;
-      right: 20px; }
-      #footer_sub .inner .linkSns li {
+          font: 13px/1.6 "Noto Sans", "Noto Sans KR";
+          color: #666; }
+        #footer_sub .inner .wrap .box p {
+          font: 12px/1 "Noto Sans", "Noto Sans KR";
+          color: #555;
+          margin-top: 40px; }
+      #footer_sub .inner .wrap .familysite {
+        width: 15%;
         float: right; }
-        #footer_sub .inner .linkSns li a {
-          padding: 10px 0 10px 30px; }
-  #footer_sub .innerBt .footerBox .leftBox .logo h1 {
-    font-size: 26px; }
-  #footer_sub .innerBt .footerBox .leftBox .cs {
-    padding-left: 20px; }
-    #footer_sub .innerBt .footerBox .leftBox .cs .csBox {
-      font-size: 13px; }
-      #footer_sub .innerBt .footerBox .leftBox .cs .csBox strong {
-        font-size: 18px; }
-    #footer_sub .innerBt .footerBox .leftBox .cs .csTime {
-      font-size: 12px;
-      padding-left: 0; }
-    #footer_sub .innerBt .footerBox .leftBox .cs i {
-      font-size: 24px; } }
+        #footer_sub .inner .wrap .familysite select {
+          width: 160px;
+          height: 40px;
+          border: none;
+          background: #111;
+          border-bottom: 1px solid #ddd;
+          color: #fff;
+          font: 14px/40px "Noto Sans", "Noto Sans KR";
+          color: #ddd;
+          margin-bottom: 20px; }
+        #footer_sub .inner .wrap .familysite .sns {
+          width: 100%; }
+          #footer_sub .inner .wrap .familysite .sns li {
+            display: inline-block; }
+            #footer_sub .inner .wrap .familysite .sns li a {
+              font-size: 22px;
+              color: #999;
+              padding: 15px; }
+
 /*department---------------------------------*/
 .department .sub_visual {
   background: url(../img/department/bg5.jpg) no-repeat center/cover; }
@@ -1487,81 +1125,30 @@ fieldset {
     content: '';
     display: block;
     clear: both; }
-  .youtube .inner #vidGallery .top {
-    width: 100%;
-    text-align: center;
-    margin-bottom: 40px; }
-    .youtube .inner #vidGallery .top h2 {
-      font: 700 32px/1 "Noto Sans", "Noto Sans KR";
-      color: #333;
-      padding-bottom: 20px;
-      margin-bottom: 20px;
-      letter-spacing: 1px;
-      position: relative; }
-      .youtube .inner #vidGallery .top h2::after {
-        content: '';
-        display: block;
-        width: 23%;
-        height: 1px;
-        background: #666;
-        position: absolute;
-        left: 50%;
-        bottom: 0;
-        transform: translateX(-50%); }
-    .youtube .inner #vidGallery .top p {
-      display: inline-block;
-      width: 90%;
-      font: 15px/1.5 "Noto Sans", "Noto Sans KR";
-      color: #555; }
   .youtube .inner #vidGallery article {
     width: 580px;
-    height: 330px;
+    height: 200px;
     margin-right: 20px;
     float: left;
     background: #fff;
     margin-bottom: 20px;
     position: relative; }
-    .youtube .inner #vidGallery article:hover a img {
-      filter: grayscale(100%); }
-    .youtube .inner #vidGallery article:hover .btns {
-      opacity: 1; }
     .youtube .inner #vidGallery article > a {
-      display: block;
-      width: 100%;
-      height: 250px;
-      overflow: hidden; }
+      width: 50%;
+      height: 100%;
+      overflow: hidden;
+      float: left; }
       .youtube .inner #vidGallery article > a img {
         width: 100%;
         height: 100%;
         object-fit: cover; }
     .youtube .inner #vidGallery article:nth-of-type(2n) {
       margin-right: 0px; }
-    .youtube .inner #vidGallery article .btns {
-      width: 100%;
-      height: 250px;
-      position: absolute;
-      top: 0;
-      left: 0;
-      opacity: 0;
-      transition: 0.5s;
-      background-color: rgba(0, 0, 0, 0.6); }
-      .youtube .inner #vidGallery article .btns > a {
-        display: block;
-        width: 120px;
-        height: 30px;
-        background: #eee;
-        font: 16px/30px "Noto Sans", "Noto Sans KR";
-        color: #333;
-        text-align: center;
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        opacity: 1; }
     .youtube .inner #vidGallery article .con {
-      width: 100%;
+      width: 50%;
       position: relative;
-      margin-top: 10px; }
+      margin-top: 10px;
+      float: left; }
       .youtube .inner #vidGallery article .con h3 {
         display: block;
         font: 700 18px/1.2 "Noto Sans", "Noto Sans KR";
@@ -1596,55 +1183,6 @@ fieldset {
     color: #fff;
     cursor: pointer; }
 
-@media screen and (max-width: 1179px) {
-  /*youtube---------------------------------*/
-  .youtube .inner {
-    width: 100%;
-    padding: 0 20px; }
-    .youtube .inner #vidGallery .top h2::after {
-      width: 40vw; }
-    .youtube .inner #vidGallery article {
-      width: 100%;
-      height: 350px;
-      margin-right: 0; }
-
-  .vidpop {
-    padding: 80px 20px; }
-    .vidpop iframe {
-      width: 100%;
-      height: 450px; } }
-@media screen and (max-width: 539px) {
-  /*youtube---------------------------------*/
-  .youtube {
-    padding: 0 0 80px 0; }
-    .youtube .inner {
-      width: 100%;
-      padding: 0 20px; }
-      .youtube .inner #vidGallery h1 {
-        font-size: 28px; }
-      .youtube .inner #vidGallery .top h2 {
-        font-size: 26px; }
-      .youtube .inner #vidGallery .top p {
-        width: 100%;
-        font: 13px/1.5 "Noto Sans", "Noto Sans KR";
-        color: #555; }
-      .youtube .inner #vidGallery article {
-        width: 100%;
-        margin-right: 0; }
-        .youtube .inner #vidGallery article > a img {
-          transform: scale(1.35); }
-        .youtube .inner #vidGallery article .btns > a {
-          font-size: 14px; }
-        .youtube .inner #vidGallery article .con h2 {
-          font-size: 16px; }
-        .youtube .inner #vidGallery article .con p {
-          font-size: 13px; }
-
-  .vidpop {
-    padding: 80px 20px; }
-    .vidpop iframe {
-      width: 100%;
-      height: 300px; } }
 /*location---------------------------------*/
 .location .sub_visual {
   background: url(../img/location/bg3.jpg) no-repeat bottom/cover;
@@ -1918,7 +1456,7 @@ fieldset {
       left: 0;
       transform: translateY(-50%); }
       #header .inner h1 a {
-        font: 32px/1 "Noto Sans", "Noto Sans KR";
+        font: 28px/1 "Noto Sans", "Noto Sans KR";
         color: #333; }
     #header .inner .menuWeb #gnb {
       position: absolute;
@@ -1937,7 +1475,7 @@ fieldset {
           color: #333;
           padding: 0 20px; }
 
-section {
+#brand {
   width: 100%;
   height: 800px;
   background: #efefef; }
@@ -1945,7 +1483,8 @@ section {
 #footer {
   width: 100%;
   background: #111;
-  padding: 50px; }
+  padding: 80px;
+  border-top: 1px solid #999; }
   #footer .inner {
     width: 1180px;
     margin: 0 auto;
