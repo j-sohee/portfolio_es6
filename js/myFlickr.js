@@ -1,7 +1,8 @@
-const main = document.querySelector("section");
+const body = document.querySelector("body");
 const frame = document.querySelector("#gallery"); 
 const input =document.querySelector(".search");
-const btn = document.querySelector("button");
+const searchBtn = document.querySelector(".searchBtn");
+const resetBtn = document.querySelector(".resetBtn");
 const loading = document.querySelector(".loading");
 const base = "https://www.flickr.com/services/rest/?";
 const method1 = "flickr.people.getPhotos";
@@ -14,6 +15,53 @@ const format = "json";
 const url1 = `${base}method=${method1}&api_key=${key}&user_id=${user_id}&per_page=${per_page}&format=${format}&nojsoncallback=1`;
 
 callData(url1);
+
+searchBtn.addEventListener("click", e=>{
+   let tag = input.value;
+   if( tag == "") return; 
+
+   const url = `${base}method=${method2}&api_key=${key}&per_page=${per_page}&format=${format}&nojsoncallback=1&tags=${tag}&privacy_filter=1`;
+
+   callData(url);
+});
+
+resetBtn.addEventListener("click", e=>{
+   callData(url1);
+})
+
+input.addEventListener("keypress", e=>{
+   if(e.key = "Enter"){
+      let tag = input.value;
+      if( tag == "") return;
+
+      const url = `${base}method=${method2}&api_key=${key}&per_page=${per_page}&format=${format}&nojsoncallback=1&tags=${tag}&privacy_filter=1`;
+      
+      callData(url);
+   }
+});
+
+frame.addEventListener("click", e=>{
+   e.preventDefault();
+   if(e.target !== e.target.closest(".item").querySelector(".thumb")) return;
+   let target = e.target.closest(".item");
+   let imgSrc = target.querySelector("a").getAttribute("href");
+
+   let pop = document.createElement("aside");
+   let pops = `
+               <img src="${imgSrc}">
+               <span class="close">CLOSE</span>
+   `;
+   pop.innerHTML = pops;
+   document.querySelector("body").append(pop);
+})
+
+body.addEventListener("click", e=>{
+   let target = e.target.closest("aside");
+   if(target !== null){
+      let close = target.querySelector(".close");
+      if(e.target == close) target.remove();
+   }
+})
 
 function callData(url){
     frame.innerHTML="";
@@ -38,8 +86,7 @@ function callData(url){
     let htmls =""; 
     
     //배열의 갯수만큼 반복
-    items.map(data=>{
-       console.log(data);      
+    items.map(data=>{ 
  
        let imgSrcBig = `https://live.staticflickr.com/${data.server}/${data.id}_${data.secret}_b.jpg`;
        let imgSrc = `https://live.staticflickr.com/${data.server}/${data.id}_${data.secret}_b.jpg`;
