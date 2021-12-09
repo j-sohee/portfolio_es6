@@ -1127,7 +1127,7 @@ aside {
     margin-bottom: 50px;
     text-align: center; }
     .youtube .inner #vidGallery article .pic {
-      width: 50%;
+      width: 45%;
       height: 100%;
       overflow: hidden; }
       .youtube .inner #vidGallery article .pic img {
@@ -1136,13 +1136,13 @@ aside {
         object-fit: cover;
         transform: scale(1.4); }
     .youtube .inner #vidGallery article .con {
-      width: 48%;
+      width: 54%;
       position: relative;
       padding: 30px 10px 0px 10px; }
       .youtube .inner #vidGallery article .con h2 {
         font: bold 16px/1.2 "Noto Sans", "Noto Sans KR";
         color: #333;
-        margin-bottom: 15px;
+        margin-bottom: 20px;
         padding-bottom: 20px;
         border-bottom: 1px solid #999; }
       .youtube .inner #vidGallery article .con p {
@@ -1151,10 +1151,10 @@ aside {
         margin-bottom: 20px; }
       .youtube .inner #vidGallery article .con span {
         font: 12px/1 "Noto Sans", "Noto Sans KR";
-        color: #999;
+        color: #666;
         position: absolute;
         right: 10px;
-        bottom: 30px; }
+        bottom: 20px; }
 
 aside {
   width: 100%;
