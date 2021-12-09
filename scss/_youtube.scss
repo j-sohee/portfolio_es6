@@ -1,42 +1,42 @@
 /*youtube---------------------------------*/
 .youtube{
     .sub_visual{
-        background:url(../img/youtube/bg3.jpg) no-repeat center/cover;
+        background:url(../img/youtube/bg01.jpg) no-repeat center/cover;
         filter: saturate(50%);
     }
     .inner{
         #vidGallery{
-            width:100%;
-            &::after{
-                content:''; display:block; clear:both;
-            }
+            width:100%; display:flex; flex-wrap:wrap;
+            justify-content: space-between;
+            align-content:center;
             article{
-                width:580px; height:200px;
-                margin-right:20px; float:left;
-                background:#fff; margin-bottom:20px;
-                position:relative;
-                >a{
-                    width:50%; height:100%; overflow:hidden;
-                    float:left;
+                width:48%; height:30%; background:#ddd;
+                display:flex;  justify-content: space-between;
+                margin-bottom:50px; text-align:center;
+                .pic{
+                    width:50%; height:100%; overflow: hidden;
                     img{
-                        width:100%; height:100%; object-fit: cover;
+                        width:100%; height:100%;
+                        object-fit:cover; transform: scale(1.4);
                     }
                 }
 
-                &:nth-of-type(2n){ margin-right:0px; }
-
                 .con{
-                    width:50%; position:relative;
-                    margin-top:10px; float:left;
-
-                    h3{
-                        display:block;
-                        font:700 18px/1.2 $font; color:#333;
-                        margin-bottom:10px;
+                    width:48%; position:relative;
+                    padding:30px 10px 0px 10px;
+                    h2{
+                        font:bold 16px/1.2 $font; color:#333;
+                        margin-bottom:15px; padding-bottom:20px;
+                        border-bottom:1px solid #999;
                     }
                     p{
-                        display:block; 
-                        font:14px/1.3 $font; color:#555;
+                        font:13px/1.3 $font; color:#555;
+                        margin-bottom:20px;
+                    }
+                    span{
+                        font:12px/1 $font; color:#999;
+                        position:absolute; right:10px; bottom:30px;
+                        
                     }
                 }
             }
@@ -44,17 +44,13 @@
     }
 }
 
-.vidpop{
+aside{
     width:100%; height:100vh;
     background:rgba(0,0,0,0.8);
     position:fixed; top:0; left:0;
     padding:80px; z-index:5;
-    iframe{
-        width:1200px; height:600px;
-        position:relative; top:50%; left:50%;
-        transform:translate(-50%,-50%);
-    }
-    span{
+
+    .close{
         position:absolute; right:20px; top:20px;
         font:18px/1 $font; color:#fff;
         cursor:pointer;

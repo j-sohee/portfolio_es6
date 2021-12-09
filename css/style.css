@@ -62,7 +62,7 @@ fieldset {
     width: 100%;
     height: 280px;
     margin-bottom: 80px;
-    background: #ddd;
+    background: #000;
     position: relative; }
     .content .sub_visual .title {
       position: absolute;
@@ -1110,49 +1110,53 @@ aside {
 
 /*youtube---------------------------------*/
 .youtube .sub_visual {
-  background: url(../img/youtube/bg3.jpg) no-repeat center/cover;
+  background: url(../img/youtube/bg01.jpg) no-repeat center/cover;
   filter: saturate(50%); }
 .youtube .inner #vidGallery {
-  width: 100%; }
-  .youtube .inner #vidGallery::after {
-    content: '';
-    display: block;
-    clear: both; }
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-content: center; }
   .youtube .inner #vidGallery article {
-    width: 580px;
-    height: 200px;
-    margin-right: 20px;
-    float: left;
-    background: #fff;
-    margin-bottom: 20px;
-    position: relative; }
-    .youtube .inner #vidGallery article > a {
+    width: 48%;
+    height: 30%;
+    background: #ddd;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 50px;
+    text-align: center; }
+    .youtube .inner #vidGallery article .pic {
       width: 50%;
       height: 100%;
-      overflow: hidden;
-      float: left; }
-      .youtube .inner #vidGallery article > a img {
+      overflow: hidden; }
+      .youtube .inner #vidGallery article .pic img {
         width: 100%;
         height: 100%;
-        object-fit: cover; }
-    .youtube .inner #vidGallery article:nth-of-type(2n) {
-      margin-right: 0px; }
+        object-fit: cover;
+        transform: scale(1.4); }
     .youtube .inner #vidGallery article .con {
-      width: 50%;
+      width: 48%;
       position: relative;
-      margin-top: 10px;
-      float: left; }
-      .youtube .inner #vidGallery article .con h3 {
-        display: block;
-        font: 700 18px/1.2 "Noto Sans", "Noto Sans KR";
+      padding: 30px 10px 0px 10px; }
+      .youtube .inner #vidGallery article .con h2 {
+        font: bold 16px/1.2 "Noto Sans", "Noto Sans KR";
         color: #333;
-        margin-bottom: 10px; }
+        margin-bottom: 15px;
+        padding-bottom: 20px;
+        border-bottom: 1px solid #999; }
       .youtube .inner #vidGallery article .con p {
-        display: block;
-        font: 14px/1.3 "Noto Sans", "Noto Sans KR";
-        color: #555; }
+        font: 13px/1.3 "Noto Sans", "Noto Sans KR";
+        color: #555;
+        margin-bottom: 20px; }
+      .youtube .inner #vidGallery article .con span {
+        font: 12px/1 "Noto Sans", "Noto Sans KR";
+        color: #999;
+        position: absolute;
+        right: 10px;
+        bottom: 30px; }
 
-.vidpop {
+aside {
   width: 100%;
   height: 100vh;
   background: rgba(0, 0, 0, 0.8);
@@ -1161,14 +1165,7 @@ aside {
   left: 0;
   padding: 80px;
   z-index: 5; }
-  .vidpop iframe {
-    width: 1200px;
-    height: 600px;
-    position: relative;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%); }
-  .vidpop span {
+  aside .close {
     position: absolute;
     right: 20px;
     top: 20px;
