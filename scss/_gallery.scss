@@ -2,6 +2,7 @@
 .gallery{
     .sub_visual{
         background:url(../img/gallery/bg01.jpg) no-repeat center/cover;
+
     }
     .inner{
         
@@ -10,8 +11,8 @@
             margin-bottom:20px; cursor: pointer;
         }
         .loading{
-            width:80px; height:80px;
-            position:absolute; top:200px; left:50%;
+            width:400px; height:300px;
+            position:absolute; top:0px; left:50%;
             transform:translateX(-50%);
             transition:0.5s;
             &.off{
@@ -27,13 +28,13 @@
             input[type=text]{
                 width:200px; height:30px; 
                 font:13px/30px $font; color:#000;
-                border:1px solid #ccc;
+                border:1px solid #999;
             }
             button{
                 width:78px; height:30px;
-                border:1px solid #ccc;
+                border:1px solid #999;
                 background:#fff;
-                font:12px/30px $font; color:#888;
+                font:12px/30px $font; color:#555;
                 vertical-align:top; transition:0.5s;
                 cursor:pointer;
                 &:hover{

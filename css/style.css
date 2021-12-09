@@ -72,11 +72,11 @@ fieldset {
       text-align: center; }
       .content .sub_visual .title h1 {
         font: 32px/1 "Noto Sans", "Noto Sans KR";
-        color: #000;
+        color: #fff;
         margin-bottom: 5px; }
       .content .sub_visual .title span {
         font: 14px/1 "Noto Sans", "Noto Sans KR";
-        color: #555; }
+        color: #ddd; }
   .content .inner {
     width: 1180px;
     min-height: 500px;
@@ -995,10 +995,10 @@ fieldset {
   margin-bottom: 20px;
   cursor: pointer; }
 .gallery .inner .loading {
-  width: 80px;
-  height: 80px;
+  width: 400px;
+  height: 300px;
   position: absolute;
-  top: 200px;
+  top: 0px;
   left: 50%;
   transform: translateX(-50%);
   transition: 0.5s; }
@@ -1015,14 +1015,14 @@ fieldset {
     height: 30px;
     font: 13px/30px "Noto Sans", "Noto Sans KR";
     color: #000;
-    border: 1px solid #ccc; }
+    border: 1px solid #999; }
   .gallery .inner #searchBox button {
     width: 78px;
     height: 30px;
-    border: 1px solid #ccc;
+    border: 1px solid #999;
     background: #fff;
     font: 12px/30px "Noto Sans", "Noto Sans KR";
-    color: #888;
+    color: #555;
     vertical-align: top;
     transition: 0.5s;
     cursor: pointer; }
