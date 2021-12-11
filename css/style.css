@@ -454,252 +454,45 @@ fieldset {
 /*join---------------------------------*/
 .join .sub_visual {
   background: url(../img/department/bg3.jpg) no-repeat center/cover; }
-.join .inner .top_txt {
+.join .wrap {
   width: 100%;
-  border-bottom: 2px solid #000;
-  margin-top: 20px; }
-  .join .inner .top_txt span {
-    display: block;
-    font: bold 22px/1 "Noto Sans", "Noto Sans KR";
-    color: #000;
-    text-align: left;
-    margin-bottom: 20px; }
-.join .inner .all_agree {
-  text-align: left;
-  padding: 20px;
-  border-bottom: 1px solid #ddd; }
-  .join .inner .all_agree label {
-    display: inline-block;
-    font: bold 18px/1 "Noto Sans", "Noto Sans KR";
-    color: #333; }
-.join .inner .wrap {
-  width: 100%;
-  text-align: left;
-  margin-bottom: 40px; }
-  .join .inner .wrap dt {
-    width: 100%;
-    padding: 20px;
-    border-bottom: 1px solid #ddd;
-    position: relative; }
-    .join .inner .wrap dt a {
-      position: absolute;
-      top: 50%;
-      right: 20px;
-      transform: translateY(-50%);
-      width: 12px;
-      height: 12px;
-      text-indent: -9999px;
-      transition: 0.5s; }
-      .join .inner .wrap dt a::before {
-        content: '';
-        display: block;
-        width: 1px;
-        height: 100%;
-        position: absolute;
-        top: 0;
-        left: 50%;
-        background: #666;
-        transform-origin: bottom center;
-        transform: rotate(-40deg); }
-      .join .inner .wrap dt a::after {
-        content: '';
-        display: block;
-        width: 1px;
-        height: 100%;
-        background: #666;
-        position: absolute;
-        top: 0;
-        left: 50%;
-        transform-origin: bottom center;
-        transform: rotate(40deg); }
-      .join .inner .wrap dt a.on::after {
-        transform-origin: top center;
-        transform: rotate(-40deg); }
-      .join .inner .wrap dt a.on::before {
-        transform-origin: top center;
-        transform: rotate(40deg); }
-    .join .inner .wrap dt > label {
-      font: 15px/1 "Noto Sans", "Noto Sans KR";
-      color: #111;
-      vertical-align: middle;
-      text-align: left; }
-      .join .inner .wrap dt > label .spot {
-        color: #ee1c25; }
-  .join .inner .wrap dd {
-    width: 100%;
-    height: 150px;
-    padding: 20px 20px 0px;
-    display: none; }
-    .join .inner .wrap dd .scroll_txt {
-      width: 100%;
-      height: 100%;
-      font: 14px/1.6 "Noto Sans", "Noto Sans KR";
-      color: #555;
-      overflow-y: scroll; }
-  .join .inner .wrap input[type=checkbox] {
-    width: 15px;
-    height: 15px;
-    border: 1px solid #333; }
-.join .inner table {
-  width: 100%;
-  margin-top: 20px; }
-  .join .inner table th {
-    width: 15%;
-    font: bold 15px/1 "Noto Sans", "Noto Sans KR";
+  height: 100%; }
+  .join .wrap h2 {
+    font: 700 26px/1 "Noto Sans", "Noto Sans KR";
     color: #333;
-    text-align: left;
-    padding: 20px 10px 20px 20px; }
-    .join .inner table th label::after {
-      content: '';
-      display: inline-block;
-      width: 4px;
-      height: 4px;
-      background: #ee1c25;
-      margin-left: 3px;
-      border-radius: 50%;
-      vertical-align: top; }
-  .join .inner table td {
-    width: auto;
-    text-align: left;
-    padding: 20px 0px; }
-    .join .inner table td input[type=text], .join .inner table td input[type=password], .join .inner table td input[type=number] {
-      width: 100%;
-      height: 40px;
-      border: none;
-      border-bottom: 1px solid #999;
-      font: 14px/40px "Noto Sans", "Noto Sans KR";
-      color: #000;
-      padding: 0 5px; }
-    .join .inner table td select {
-      width: 25%;
-      height: 40px;
-      border: 1px solid #999;
-      padding: 10px;
-      font: 14px/40px "Noto Sans", "Noto Sans KR";
-      color: #666; }
-    .join .inner table td .btn {
-      display: inline-block;
-      width: 200px;
-      height: 40px;
-      border: 1px solid #666;
-      font: bold 14px/40px "Noto Sans", "Noto Sans KR";
-      color: #555;
-      text-align: center;
-      vertical-align: top;
-      transition: 0.5s; }
-      .join .inner table td .btn:hover {
-        background: #eee;
-        color: #000; }
-  .join .inner table tr:nth-of-type(5) td input[type=text] {
-    width: 53%; }
-  .join .inner table tr:nth-of-type(6) td input[type=number] {
-    width: 79%; }
-  .join .inner table tr:last-child th {
-    text-align: center; }
-  .join .inner table input[type=reset] {
-    width: 180px;
-    height: 60px;
-    background: #bbb;
-    border: none;
-    font: 16px/60px "Noto Sans", "Noto Sans KR";
-    color: #fff;
+    margin-bottom: 10px; }
+  .join .wrap ul {
+    width: 100%;
+    background: #eee;
+    border-top: 5px solid #111;
     text-align: center;
-    margin-right: 10px; }
-  .join .inner table input[type=submit] {
-    width: 180px;
-    height: 60px;
-    background: #000;
-    border: none;
-    font: 16px/60px "Noto Sans", "Noto Sans KR";
-    color: #fff;
-    text-align: center; }
-  .join .inner table .err_txt {
-    width: 100%;
-    padding: 0 5px; }
-    .join .inner table .err_txt > p {
-      font: 12px/1 "Noto Sans", "Noto Sans KR";
-      color: #ee1c25;
-      margin-top: 10px;
-      text-align: left;
-      margin-bottom: 0; }
+    padding: 50px; }
+    .join .wrap ul li {
+      display: inline-block;
+      padding: 0 13px;
+      margin-bottom: 10px; }
+      .join .wrap ul li input[type=radio] {
+        appearance: none;
+        width: 15px;
+        height: 15px;
+        border: 1px solid #333;
+        font-size: 12px;
+        color: #333;
+        position: relative; }
+        .join .wrap ul li input[type=radio]:checked::before {
+          content: '';
+          display: block;
+          width: 7.5px;
+          height: 7.5px;
+          margin: 5%;
+          background: #333;
+          position: absolute;
+          margin-top: 2.5px;
+          margin-left: 2.5px; }
+    .join .wrap ul p {
+      font: 14px/1 "Noto Sans", "Noto Sans KR";
+      color: #555; }
 
-@media screen and (max-width: 1179px) {
-  .join .inner {
-    width: 100%;
-    padding: 0 20px; }
-    .join .inner .top_txt {
-      width: 100%; }
-    .join .inner table {
-      width: 100%;
-      margin-top: 20px; }
-      .join .inner table th {
-        width: 30%;
-        font-size: 14px;
-        padding: 0px 10px 20px 10px; }
-      .join .inner table td {
-        width: auto;
-        text-align: left;
-        padding: 0 10px 20px 10px; }
-        .join .inner table td input[type=text], .join .inner table td input[type=password], .join .inner table td input[type=number] {
-          font-size: 12px; }
-        .join .inner table td select {
-          width: 100%;
-          margin: 10px 0;
-          font-size: 13px; }
-        .join .inner table td .btn {
-          width: 100%;
-          font-size: 13px; }
-      .join .inner table tr:nth-of-type(5) td input[type=text] {
-        width: 100%; }
-      .join .inner table tr:nth-of-type(6) td input[type=number] {
-        width: 100%;
-        margin-bottom: 10px; }
-      .join .inner table input[type=reset] {
-        width: 48%;
-        margin-right: 2%;
-        font-size: 15px; }
-      .join .inner table input[type=submit] {
-        width: 48%;
-        font-size: 15px;
-        margin-right: 0; } }
-@media screen and (max-width: 539px) {
-  .join .inner {
-    width: 100%;
-    padding: 0 20px; }
-    .join .inner h1 {
-      font-size: 28px; }
-    .join .inner .top_txt {
-      width: 100%; }
-    .join .inner .all_agree label {
-      font-size: 16px; }
-    .join .inner .wrap dt > label {
-      font-size: 13px; }
-    .join .inner .wrap dt a {
-      width: 10px;
-      height: 10px; }
-    .join .inner .wrap dd .scroll_txt {
-      font-size: 13px; }
-    .join .inner table {
-      width: 100%;
-      margin-top: 20px; }
-      .join .inner table th {
-        width: 30%;
-        font-size: 14px;
-        padding: 0px 0px 20px 5px;
-        font-size: 12px; }
-      .join .inner table td {
-        width: auto;
-        text-align: left;
-        padding: 0 10px 20px 10px; }
-        .join .inner table td select {
-          font-size: 12px; }
-        .join .inner table td .btn {
-          width: 100%;
-          font-size: 12px; }
-      .join .inner table input[type=reset] {
-        font-size: 14px; }
-      .join .inner table input[type=submit] {
-        font-size: 14px; } }
 /*gallery---------------------------------*/
 .gallery .sub_visual {
   background: url(../img/gallery/bg01.jpg) no-repeat center/cover; }
