@@ -13,15 +13,13 @@ $mobile : 539px;
 
 @import "sub_layout.scss";
 @import "department.scss";
-@import "community.scss";
 @import "join.scss";
 @import "gallery.scss";
 @import "youtube.scss";
-@import "location.scss";
 
 #header{
-    width:100%; position:relative;
-    border-bottom:1px solid #ddd;
+    width:100%; position:absolute; top:0; left:0;
+    border-bottom:1px solid #999; z-index:5;
     .inner{
         width:1180px; height:80px; margin:0 auto;
         position:relative;
@@ -43,7 +41,7 @@ $mobile : 539px;
                     float:left;
                     a{
                         display:inline-block;
-                        font:14px/1 $font; color:#333;
+                        font:14px/1 $font; color:#fff;
                         padding:0 20px;
                     }
                 }
@@ -51,15 +49,20 @@ $mobile : 539px;
         }
     }
 }
-#brand{
-    width:100%; height:800px;
-    background:#efefef;
-}
+#visual{
+    width:100%;  height:100vh;  overflow: hidden;
 
+    .vid{
+        width:100%; height:100%; object-fit: cover;
+    }
+    .pic{
+        width:100%; height:100%; object-fit: cover;
+    }
+}
 #footer{
     width:100%; 
     background:#111; padding:80px;
-    border-top:1px solid #999;
+    border-top:1px solid #111;
     .inner{
         width:1180px; margin:0 auto; position:relative;
         .wrap{
