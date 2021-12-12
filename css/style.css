@@ -453,7 +453,11 @@ fieldset {
     width: 100%; } }
 /*join---------------------------------*/
 .join .sub_visual {
-  background: url(../img/department/bg3.jpg) no-repeat center/cover; }
+  background: url(../img/join/join01.jpg) no-repeat center/cover; }
+  .join .sub_visual .title h1 {
+    color: #111; }
+  .join .sub_visual .title span {
+    color: #555; }
 .join .wrap {
   width: 100%;
   height: 100%; }

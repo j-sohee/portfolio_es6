@@ -24,24 +24,6 @@ class Validation {
        })
     }
  
-    isNumber(name, len){
-       const input = this.form.querySelector(`[name=${name}]`);
-       const txt = input.value;
-       if(!txt.length > len && /-/.test(txt)){
-            const errMsgs = input.closest("td").querySelectorAll("p");
-            if(errMsgs.length> 0) input.closest("td").querySelctor("p").remove();
-            const errMsg = document.createElement("p");
-            errMsg.append(`입력항목을 ${len}글자 이상 입력하세요.`);
-            input.closest("td").append(errMsg);
-            return false;
-          
-       }else{
-            const errMsgs = input.closest("td").querySelectorAll("p");
-            if(errMsgs.length > 0) input.closest("td").querySelctor("p").remove();
-            return true;
-
-       }
-    }
     isTxt(name, len){
         const input = this.form.querySelector(`[name=${name}]`);
         const txt = input.value;
