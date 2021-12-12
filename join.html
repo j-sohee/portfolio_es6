@@ -9,6 +9,45 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <link rel="stylesheet" href="css/style.css">
     <script defer src="js/join.js"></script>
+    <script>
+        window.addEventListener("load",()=>{
+           new Validation("#myForm",[
+              {
+                 type: "text",
+                 name: "userId",
+                 len: 4
+              },
+              {
+               type: "password",
+               name: ["pwd1", "pwd2"],
+               len: 8
+            },
+            {
+               type: "text",
+               name: "name",
+               len: 2
+            },
+            {
+               type: "email",
+               name: "email",
+               len: 10
+            },
+            {
+               type: "text",
+               name: "phone",
+               len:8
+            },
+            {
+               type: "check",
+               name: "gender"
+            },
+            {
+               type: "select",
+               name: "birthYear"
+            },
+           ])
+        })
+     </script>
 </head>
 <body>
     <header id="header_sub">
@@ -108,7 +147,7 @@
                                         <label for="phone">휴대폰번호</label>
                                     </th>
                                     <td>
-                                        <input type="text" name="phone" id="phone">
+                                        <input type="text" name="phone" id="phone" placeholder="-없이 입력해주세요">
                                     </td>
                                 </tr>
                                 <tr>
@@ -204,7 +243,7 @@
             </div>
             <div class="btns">
                 <input type="reset" value="이전단계">
-                <input type="submit" value="가입하기">
+                <input type="submit" value="가입하기" class="submit">
             </div>
         </div>
     </section>

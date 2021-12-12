@@ -69,7 +69,7 @@
                 button{
                     width:136px; height:35px;
                     border:1px solid #999;
-                    background:#fff;
+                    background:#fff; cursor:pointer;
                     font:14px/1 $font;  color:#111;
                 }
                 select{
@@ -89,6 +89,12 @@
                     display:block;
                     margin-top:5px;
                 }
+                //동적으로 생성될 에러 메시지 스타일
+                p {
+                    font: 12px/1 $font; 
+                    color: hotpink;
+                    margin-top: 5px;
+                 } 
             }
         }
     }

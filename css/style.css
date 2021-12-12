@@ -535,6 +535,7 @@ fieldset {
         height: 35px;
         border: 1px solid #999;
         background: #fff;
+        cursor: pointer;
         font: 14px/1 "Noto Sans", "Noto Sans KR";
         color: #111; }
       .join .base_info table td select {
@@ -552,6 +553,10 @@ fieldset {
         width: 25%; }
       .join .base_info table td #address, .join .base_info table td #addressSub {
         display: block;
+        margin-top: 5px; }
+      .join .base_info table td p {
+        font: 12px/1 "Noto Sans", "Noto Sans KR";
+        color: hotpink;
         margin-top: 5px; }
 .join .agreement {
   width: 100%; }
