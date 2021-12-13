@@ -1,6 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Nanum+Gothic&family=Open+Sans:wght@400;600&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -35,7 +33,7 @@ fieldset {
       left: 0;
       transform: translateY(-50%); }
       #header_sub .inner h1 a {
-        font: 28px/1 "Noto Sans", "Noto Sans KR";
+        font: 28px/1 "Open Sans", "Nanum Gothic";
         color: #333; }
     #header_sub .inner .menuWeb #gnb {
       position: absolute;
@@ -50,7 +48,7 @@ fieldset {
         float: left; }
         #header_sub .inner .menuWeb #gnb li a {
           display: inline-block;
-          font: 14px/1 "Noto Sans", "Noto Sans KR";
+          font: 14px/1 "Open Sans", "Nanum Gothic";
           color: #333;
           padding: 0 20px; }
 
@@ -71,11 +69,11 @@ fieldset {
       transform: translate(-50%, -50%);
       text-align: center; }
       .content .sub_visual .title h1 {
-        font: 32px/1 "Noto Sans", "Noto Sans KR";
+        font: 32px/1 "Open Sans", "Nanum Gothic";
         color: #fff;
         margin-bottom: 5px; }
       .content .sub_visual .title span {
-        font: 14px/1 "Noto Sans", "Noto Sans KR";
+        font: 14px/1 "Open Sans", "Nanum Gothic";
         color: #ddd; }
   .content .inner {
     width: 1180px;
@@ -104,7 +102,7 @@ fieldset {
         float: left;
         font-size: 0; }
         #footer_sub .inner .wrap h1 a {
-          font: 24px/1 "Noto Sans", "Noto Sans KR";
+          font: 24px/1 "Open Sans", "Nanum Gothic";
           color: #fff; }
       #footer_sub .inner .wrap .box {
         width: 70%;
@@ -119,15 +117,15 @@ fieldset {
             float: left;
             margin-bottom: 20px; }
             #footer_sub .inner .wrap .box ul li a {
-              font: 14px/1 "Noto Sans", "Noto Sans KR";
+              font: 14px/1 "Open Sans", "Nanum Gothic";
               color: #ccc;
               padding-right: 20px; }
         #footer_sub .inner .wrap .box address {
           width: 100%;
-          font: 13px/1.6 "Noto Sans", "Noto Sans KR";
+          font: 13px/1.6 "Open Sans", "Nanum Gothic";
           color: #666; }
         #footer_sub .inner .wrap .box p {
-          font: 12px/1 "Noto Sans", "Noto Sans KR";
+          font: 12px/1 "Open Sans", "Nanum Gothic";
           color: #555;
           margin-top: 40px; }
       #footer_sub .inner .wrap .familysite {
@@ -140,7 +138,7 @@ fieldset {
           background: #111;
           border-bottom: 1px solid #ddd;
           color: #fff;
-          font: 14px/40px "Noto Sans", "Noto Sans KR";
+          font: 14px/40px "Open Sans", "Nanum Gothic";
           color: #ddd;
           margin-bottom: 20px; }
         #footer_sub .inner .wrap .familysite .sns {
@@ -162,7 +160,7 @@ fieldset {
     width: 1180px;
     margin: 0 auto; }
     .department .inner .mainTit h1 {
-      font: 32px/1 "Noto Sans", "Noto Sans KR";
+      font: 32px/1 "Open Sans", "Nanum Gothic";
       color: #000;
       margin-bottom: 40px;
       padding-bottom: 30px;
@@ -172,7 +170,7 @@ fieldset {
     text-align: center;
     margin-bottom: 60px; }
     .department .inner .sub_tit h2 {
-      font: 26px/1 "Noto Sans", "Noto Sans KR";
+      font: 26px/1 "Open Sans", "Nanum Gothic";
       color: #333;
       margin-bottom: 20px;
       text-align: center;
@@ -189,7 +187,7 @@ fieldset {
         bottom: 0;
         transform: translateX(-50%); }
     .department .inner .sub_tit > p {
-      font: 14px/1.4 "Noto Sans", "Noto Sans KR";
+      font: 14px/1.4 "Open Sans", "Nanum Gothic";
       color: #555; }
   .department .inner .dpt1 {
     width: 1180px;
@@ -205,7 +203,7 @@ fieldset {
       float: left;
       padding: 20px 10px; }
       .department .inner .dpt1 .left p {
-        font: 16px/1.5 "Noto Sans", "Noto Sans KR";
+        font: 16px/1.5 "Open Sans", "Nanum Gothic";
         color: #555;
         margin-bottom: 76px;
         padding-right: 20px; }
@@ -213,7 +211,7 @@ fieldset {
         display: block;
         width: 120px;
         height: 40px;
-        font: 12px/40px "Noto Sans", "Noto Sans KR";
+        font: 12px/40px "Open Sans", "Nanum Gothic";
         color: #666;
         border: 1px solid #aaa;
         text-align: center;
@@ -275,12 +273,12 @@ fieldset {
             width: 100%;
             height: 100%; }
         .department .inner .dpt2 .wrap article h3 {
-          font: bold 16px/1 "Noto Sans", "Noto Sans KR";
+          font: bold 16px/1 "Open Sans", "Nanum Gothic";
           color: #333;
           margin-top: 20px; }
         .department .inner .dpt2 .wrap article p {
           display: inline-block;
-          font: 14px/1.3 "Noto Sans", "Noto Sans KR";
+          font: 14px/1.3 "Open Sans", "Nanum Gothic";
           color: #666;
           padding: 15px 30px;
           box-sizing: border-box; }
@@ -320,11 +318,11 @@ fieldset {
         transition: 0.5s;
         opacity: 0; }
         .department .inner .dpt3 > article .teamBox h4 {
-          font: 20px/1 "Noto Sans", "Noto Sans KR";
+          font: 20px/1 "Open Sans", "Nanum Gothic";
           color: #fff;
           margin-bottom: 10px; }
         .department .inner .dpt3 > article .teamBox span {
-          font: 12px/1 "Noto Sans", "Noto Sans KR";
+          font: 12px/1 "Open Sans", "Nanum Gothic";
           color: #eee;
           letter-spacing: 1px; }
         .department .inner .dpt3 > article .teamBox .sns {
@@ -347,7 +345,7 @@ fieldset {
         .department .inner .dpt3 > article:nth-of-type(7) p {
           text-align: left;
           padding: 0 0 0 10px;
-          font: 12px/1 "Noto Sans", "Noto Sans KR";
+          font: 12px/1 "Open Sans", "Nanum Gothic";
           color: #666;
           letter-spacing: 2px;
           margin-top: 60px;
@@ -370,7 +368,7 @@ fieldset {
           width: 150px;
           height: 40px;
           border: 1px solid #ccc;
-          font: 12px/40px "Noto Sans", "Noto Sans KR";
+          font: 12px/40px "Open Sans", "Nanum Gothic";
           color: #999;
           letter-spacing: 2px;
           text-align: center;
@@ -462,7 +460,7 @@ fieldset {
   width: 100%;
   height: 100%; }
   .join .wrap h2 {
-    font: 700 26px/1 "Noto Sans", "Noto Sans KR";
+    font: 600 26px/1 "Open Sans", "Nanum Gothic";
     color: #333;
     margin-bottom: 10px; }
   .join .wrap ul {
@@ -495,12 +493,12 @@ fieldset {
           margin-top: 2.5px;
           margin-left: 2.5px; }
     .join .wrap ul p {
-      font: 14px/1 "Noto Sans", "Noto Sans KR";
+      font: 14px/1 "Open Sans", "Nanum Gothic";
       color: #555; }
 .join .base_info {
   width: 100%; }
   .join .base_info h3 {
-    font: 20px/1 "Noto Sans", "Noto Sans KR";
+    font: 20px/1 "Open Sans", "Nanum Gothic";
     color: #333;
     margin-bottom: 10px; }
   .join .base_info table {
@@ -510,7 +508,7 @@ fieldset {
     .join .base_info table th {
       width: 15%;
       text-align: left;
-      font: 16px/1 "Noto Sans", "Noto Sans KR";
+      font: 16px/1 "Open Sans", "Nanum Gothic";
       color: #333;
       padding: 20px 30px;
       position: relative; }
@@ -532,7 +530,7 @@ fieldset {
         height: 35px;
         border: 1px solid #ddd;
         padding: 10px;
-        font: 14px/1 "Noto Sans", "Noto Sans KR";
+        font: 14px/1 "Open Sans", "Nanum Gothic";
         color: #999; }
       .join .base_info table td button {
         width: 136px;
@@ -540,17 +538,17 @@ fieldset {
         border: 1px solid #999;
         background: #fff;
         cursor: pointer;
-        font: 14px/1 "Noto Sans", "Noto Sans KR";
+        font: 14px/1 "Open Sans", "Nanum Gothic";
         color: #111; }
       .join .base_info table td select {
         width: 123px;
         height: 35px;
         border: 1px solid #ddd;
-        font: 14px/1 "Noto Sans", "Noto Sans KR";
+        font: 14px/1 "Open Sans", "Nanum Gothic";
         color: #333;
         padding: 0 10px; }
       .join .base_info table td > label {
-        font: 16px/1 "Noto Sans", "Noto Sans KR";
+        font: 16px/1 "Open Sans", "Nanum Gothic";
         color: #333;
         margin-right: 20px; }
       .join .base_info table td #code {
@@ -559,7 +557,7 @@ fieldset {
         display: block;
         margin-top: 5px; }
       .join .base_info table td p {
-        font: 12px/1 "Noto Sans", "Noto Sans KR";
+        font: 12px/1 "Open Sans", "Nanum Gothic";
         color: hotpink;
         margin-top: 5px; }
 .join .agreement {
@@ -569,7 +567,7 @@ fieldset {
     height: 15px;
     border: 1px solid #333; }
   .join .agreement label {
-    font: 18px/1 "Noto Sans", "Noto Sans KR";
+    font: 18px/1 "Open Sans", "Nanum Gothic";
     color: #333;
     vertical-align: top; }
   .join .agreement .agreement_box {
@@ -577,7 +575,7 @@ fieldset {
     height: 250px;
     overflow-x: hidden;
     overflow-y: auto;
-    font: 16px/1.6 "Noto Sans", "Noto Sans KR";
+    font: 16px/1.6 "Open Sans", "Nanum Gothic";
     color: #666;
     border: 1px solid #ddd;
     padding: 30px 50px;
@@ -592,7 +590,7 @@ fieldset {
     width: 200px;
     height: 60px;
     border: 1px solid #333;
-    font: 16px/1 "Noto Sans", "Noto Sans KR";
+    font: 16px/1 "Open Sans", "Nanum Gothic";
     color: #333; }
   .join .btns input[type=reset] {
     background: #fff; }
@@ -626,7 +624,7 @@ fieldset {
   .gallery .inner #searchBox input[type=text] {
     width: 200px;
     height: 30px;
-    font: 13px/30px "Noto Sans", "Noto Sans KR";
+    font: 13px/30px "Open Sans", "Nanum Gothic";
     color: #000;
     border: 1px solid #999; }
   .gallery .inner #searchBox button {
@@ -634,7 +632,7 @@ fieldset {
     height: 30px;
     border: 1px solid #999;
     background: #fff;
-    font: 12px/30px "Noto Sans", "Noto Sans KR";
+    font: 12px/30px "Open Sans", "Nanum Gothic";
     color: #555;
     vertical-align: top;
     transition: 0.5s;
@@ -662,9 +660,9 @@ fieldset {
     padding: 12px; }
     .gallery .inner #gallery .item div {
       width: 100%;
-      background: #eee; }
+      background: #ddd; }
       .gallery .inner #gallery .item div h2 {
-        font: 16px/1 "Noto Sans", "Noto Sans KR";
+        font: 16px/1 "Open Sans", "Nanum Gothic";
         color: #555;
         text-align: center;
         position: relative;
@@ -689,7 +687,7 @@ fieldset {
         width: 100%;
         margin-top: 20px;
         padding-left: 20px;
-        font: 14px/1 "Noto Sans", "Noto Sans KR";
+        font: 14px/1 "Open Sans", "Nanum Gothic";
         color: #666; }
       .gallery .inner #gallery .item div span {
         display: block;
@@ -697,7 +695,7 @@ fieldset {
         margin-top: 10px;
         padding-left: 20px;
         padding-bottom: 30px;
-        font: 13px/1 "Noto Sans", "Noto Sans KR";
+        font: 13px/1 "Open Sans", "Nanum Gothic";
         color: #888; }
 
 aside {
@@ -717,7 +715,7 @@ aside {
     position: absolute;
     top: 20px;
     right: 20px;
-    font: 18px/1 "Noto Sans", "Noto Sans KR";
+    font: 18px/1 "Open Sans", "Nanum Gothic";
     color: #fff;
     cursor: pointer; }
 
@@ -753,17 +751,17 @@ aside {
       position: relative;
       padding: 30px 10px 0px 10px; }
       .youtube .inner #vidGallery article .con h2 {
-        font: bold 16px/1.2 "Noto Sans", "Noto Sans KR";
+        font: bold 16px/1.2 "Open Sans", "Nanum Gothic";
         color: #333;
         margin-bottom: 20px;
         padding-bottom: 20px;
         border-bottom: 1px solid #999; }
       .youtube .inner #vidGallery article .con p {
-        font: 13px/1.3 "Noto Sans", "Noto Sans KR";
+        font: 13px/1.3 "Open Sans", "Nanum Gothic";
         color: #555;
         margin-bottom: 20px; }
       .youtube .inner #vidGallery article .con span {
-        font: 12px/1 "Noto Sans", "Noto Sans KR";
+        font: 12px/1 "Open Sans", "Nanum Gothic";
         color: #666;
         position: absolute;
         right: 10px;
@@ -782,7 +780,7 @@ aside {
     position: absolute;
     right: 20px;
     top: 20px;
-    font: 18px/1 "Noto Sans", "Noto Sans KR";
+    font: 18px/1 "Open Sans", "Nanum Gothic";
     color: #fff;
     cursor: pointer; }
 
@@ -804,7 +802,7 @@ aside {
       left: 0;
       transform: translateY(-50%); }
       #header .inner h1 a {
-        font: 28px/1 "Noto Sans", "Noto Sans KR";
+        font: 28px/1 "Open Sans", "Nanum Gothic";
         color: #333; }
     #header .inner .menuWeb #gnb {
       position: absolute;
@@ -819,7 +817,7 @@ aside {
         float: left; }
         #header .inner .menuWeb #gnb li a {
           display: inline-block;
-          font: 14px/1 "Noto Sans", "Noto Sans KR";
+          font: 14px/1 "Open Sans", "Nanum Gothic";
           color: #fff;
           padding: 0 20px; }
 
@@ -856,7 +854,7 @@ aside {
         float: left;
         font-size: 0; }
         #footer .inner .wrap h1 a {
-          font: 24px/1 "Noto Sans", "Noto Sans KR";
+          font: 24px/1 "Open Sans", "Nanum Gothic";
           color: #fff; }
       #footer .inner .wrap .box {
         width: 70%;
@@ -871,15 +869,15 @@ aside {
             float: left;
             margin-bottom: 20px; }
             #footer .inner .wrap .box ul li a {
-              font: 14px/1 "Noto Sans", "Noto Sans KR";
+              font: 14px/1 "Open Sans", "Nanum Gothic";
               color: #ccc;
               padding-right: 20px; }
         #footer .inner .wrap .box address {
           width: 100%;
-          font: 13px/1.6 "Noto Sans", "Noto Sans KR";
+          font: 13px/1.6 "Open Sans", "Nanum Gothic";
           color: #666; }
         #footer .inner .wrap .box p {
-          font: 12px/1 "Noto Sans", "Noto Sans KR";
+          font: 12px/1 "Open Sans", "Nanum Gothic";
           color: #555;
           margin-top: 40px; }
       #footer .inner .wrap .familysite {
@@ -892,7 +890,7 @@ aside {
           background: #111;
           border-bottom: 1px solid #ddd;
           color: #fff;
-          font: 14px/40px "Noto Sans", "Noto Sans KR";
+          font: 14px/40px "Open Sans", "Nanum Gothic";
           color: #ddd;
           margin-bottom: 20px; }
         #footer .inner .wrap .familysite .sns {

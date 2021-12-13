@@ -7,9 +7,9 @@ const loading = document.querySelector(".loading");
 const base = "https://www.flickr.com/services/rest/?";
 const method1 = "flickr.people.getPhotos";
 const method2 = "flickr.photos.search";
-const user_id = "194106842@N02";
+const user_id = "194606222@N04";
 const key = "c28561608d1c0e9f7db60ecfda79bf27";
-const per_page = 50; 
+const per_page = 20; 
 const format = "json"; 
 
 const url1 = `${base}method=${method1}&api_key=${key}&user_id=${user_id}&per_page=${per_page}&format=${format}&nojsoncallback=1`;
