@@ -731,14 +731,15 @@ aside {
   align-content: center; }
   .youtube .inner #vidGallery article {
     width: 48%;
-    height: 30%;
-    background: #ddd;
+    border: 1px solid #aaa;
     display: flex;
     justify-content: space-between;
     margin-bottom: 50px;
-    text-align: center; }
+    text-align: center;
+    position: relative;
+    overflow: hidden; }
     .youtube .inner #vidGallery article .pic {
-      width: 45%;
+      width: 60%;
       height: 100%;
       overflow: hidden; }
       .youtube .inner #vidGallery article .pic img {
@@ -747,7 +748,7 @@ aside {
         object-fit: cover;
         transform: scale(1.4); }
     .youtube .inner #vidGallery article .con {
-      width: 54%;
+      width: 40%;
       position: relative;
       padding: 30px 10px 0px 10px; }
       .youtube .inner #vidGallery article .con h2 {
@@ -766,6 +767,21 @@ aside {
         position: absolute;
         right: 10px;
         bottom: 20px; }
+    .youtube .inner #vidGallery article .btn {
+      width: 40%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.9);
+      position: absolute;
+      right: 0;
+      top: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font: 16px/1 "Open Sans", "Nanum Gothic";
+      color: #fff;
+      transition: 0.6s; }
+    .youtube .inner #vidGallery article:hover .btn {
+      top: 0; }
 
 aside {
   width: 100%;

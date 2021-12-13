@@ -27,18 +27,19 @@ class Youtube{
                 let desc = item.snippet.description;
                 let date = item.snippet.publishedAt.split("T")[0];
                 
-                if(tit.length > 20) tit = tit.substr(0, 20)+"...";
+                if(tit.length > 15) tit = tit.substr(0, 15)+"...";
                 if(desc.length > 100) desc = desc.substr(0, 100)+"...";
                 result += `
                     <article>
-                        <a href="${item.snippet.resourceId.videoId}" class="pic">
+                        <div class="pic">
                             <img src="${item.snippet.thumbnails.standard.url}">
-                        </a>
+                        </div>
                         <div class="con">
                             <h2>${tit}</h2>
                             <p>${desc}</p>
                             <span>${date}</span>
                         </div>
+                        <a href="${item.snippet.resourceId.videoId}" class="btn">view more</a>
                     </article>
                 `;
             })
@@ -49,8 +50,10 @@ class Youtube{
     createPop(e){
         e.preventDefault();
         
-        if(e.target.parentElement.nodeName !== "A") return;
-        const vidId = e.target.closest("a").getAttribute("href");
+
+        const view = e.target.closest(".btn");
+        console.log(view);
+        const vidId = view.closest("a").getAttribute("href");
         //console.log(e.target.parentElement.nodeName);
     
         let pop = document.createElement("aside");
