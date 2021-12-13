@@ -119,3 +119,96 @@ $mobile : 539px;
         }
     }
 }
+
+@media screen and (max-width:$tablet){
+    #header{
+        padding:10px;
+        .inner{
+            width:100%; 
+            .menuWeb{
+                #gnb{
+                    li{
+                        a{
+                            padding:0 10px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    #footer{
+        padding:20px;
+        .inner{
+            width:100%;
+            .wrap{
+                h1{
+                    width:100%;
+                    margin-bottom:10px;
+                }
+                .familysite{
+                    width:26%; 
+                    select{
+                        width:100%;
+                    }
+                    .sns{
+                        width:100%;
+                        li{
+                            display:inline-block;
+                            a{
+                                font-size:20px;
+                                color:#999; padding:9px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+@media screen and (max-width:$mobile){
+    #header{
+        padding:10px;
+        .inner{
+            width:100%; 
+            .menuWeb{
+                #gnb{
+                    li{
+                       display:none;
+                    }
+                }
+            }
+        }
+    }
+    #footer{
+        .inner{
+            .wrap{
+                .box{
+                    width:100%;
+                    ul{
+                        li{
+                            a{
+                                padding-right:10px;
+                            }
+                        }
+                    }
+                    address{
+                        margin-bottom:20px;
+                    }
+                }
+                .familysite{
+                    width:100%; 
+                    .sns{
+                        li{
+                            a{
+                                font-size:20px;
+                                color:#999; padding:0 10px 0 0;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
