@@ -311,6 +311,23 @@ $mobile : 539px;
     }
 }
 
+#navi{
+    position:fixed; top:50%; right:50px;
+    transform:translateY(-50%);
+    li{
+        margin:20px 0;
+        a{
+            display:block;
+            width:10px; height:10px;
+            border-radius: 5px; background:#ddd;
+            transition:0.5s;
+        }
+        &.on{
+            a{background:#865439; height:40px;}
+        }
+    }
+}
+
 @media screen and (max-width:$tablet){
     #header{
         padding:10px;

@@ -1222,6 +1222,24 @@ aside {
               color: #999;
               padding: 15px; }
 
+#navi {
+  position: fixed;
+  top: 50%;
+  right: 50px;
+  transform: translateY(-50%); }
+  #navi li {
+    margin: 20px 0; }
+    #navi li a {
+      display: block;
+      width: 10px;
+      height: 10px;
+      border-radius: 5px;
+      background: #ddd;
+      transition: 0.5s; }
+    #navi li.on a {
+      background: #865439;
+      height: 40px; }
+
 @media screen and (max-width: 1179px) {
   #header {
     padding: 10px; }
