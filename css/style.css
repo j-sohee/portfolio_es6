@@ -897,6 +897,263 @@ aside {
     height: 100%;
     object-fit: cover; }
 
+#brand {
+  width: 100%;
+  padding: 80px 0; }
+  #brand .inner {
+    width: 1180px;
+    margin: 0 auto;
+    position: relative; }
+    #brand .inner::after {
+      content: '';
+      display: block;
+      clear: both; }
+    #brand .inner article {
+      width: 580px;
+      height: 500px;
+      float: left;
+      margin-right: 20px;
+      position: relative; }
+      #brand .inner article:first-child::after {
+        content: '';
+        display: block;
+        width: 70%;
+        height: 100%;
+        background: #B4846C;
+        position: absolute;
+        top: -20px;
+        left: 115px; }
+      #brand .inner article:last-child {
+        margin-right: 0;
+        padding: 40px 20px; }
+      #brand .inner article .pic {
+        width: 70%;
+        height: 100%;
+        position: absolute;
+        top: 10px;
+        right: 20px;
+        z-index: 3; }
+        #brand .inner article .pic img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover; }
+      #brand .inner article h1 {
+        font: 26px/1 "Open Sans", "Nanum Gothic";
+        color: #333;
+        position: relative;
+        padding-bottom: 20px; }
+        #brand .inner article h1::after {
+          content: '';
+          display: block;
+          width: 5vw;
+          height: 2px;
+          background: #865439;
+          position: absolute;
+          bottom: 0;
+          left: 0; }
+      #brand .inner article p {
+        width: 80%;
+        font: 14px/1.6 "Open Sans", "Nanum Gothic";
+        color: #555;
+        margin: 20px 0; }
+      #brand .inner article a {
+        display: block;
+        width: 160px;
+        height: 40px;
+        font: 14px/40px "Open Sans", "Nanum Gothic";
+        color: #fff;
+        background: #555;
+        text-align: center; }
+
+#news {
+  width: 100%;
+  padding: 40px 0 80px 0; }
+  #news .inner {
+    width: 1180px;
+    margin: 0 auto;
+    position: relative;
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; }
+    #news .inner > h1 {
+      width: 100%;
+      font: 24px/1 "Open Sans", "Nanum Gothic";
+      color: #333;
+      position: relative;
+      padding-bottom: 20px;
+      margin-bottom: 20px; }
+      #news .inner > h1::after {
+        content: '';
+        display: block;
+        width: 5vw;
+        height: 2px;
+        background: #865439;
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%); }
+    #news .inner > p {
+      width: 60%;
+      font: 14px/1.4 "Open Sans", "Nanum Gothic";
+      color: #555;
+      margin-bottom: 40px; }
+  #news .wrap {
+    width: 1180px;
+    margin: 0 auto;
+    position: relative;
+    display: flex;
+    flex-wrap: wrap; }
+    #news .wrap > article {
+      width: 393.33px;
+      height: 250px;
+      display: flex;
+      text-align: center; }
+      #news .wrap > article .pic {
+        width: 100%;
+        height: 100%; }
+        #news .wrap > article .pic img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover; }
+      #news .wrap > article:nth-of-type(2n) {
+        background: #faf3e9;
+        padding: 10px; }
+        #news .wrap > article:nth-of-type(2n) .content {
+          width: 100%;
+          height: 100%;
+          border: 1px solid #ccc;
+          padding: 30px 10px;
+          display: flex;
+          justify-content: center;
+          flex-wrap: wrap;
+          align-items: center; }
+          #news .wrap > article:nth-of-type(2n) .content h2 {
+            font: 22px/1 "Open Sans", "Nanum Gothic";
+            color: #333; }
+          #news .wrap > article:nth-of-type(2n) .content span {
+            width: 100%;
+            font: 14px/1.4 "Open Sans", "Nanum Gothic";
+            color: #555; }
+          #news .wrap > article:nth-of-type(2n) .content .btns {
+            display: block;
+            width: 120px;
+            height: 30px;
+            background: #9e6f56;
+            font: 12px/30px "Open Sans", "Nanum Gothic";
+            color: #fff;
+            text-align: center; }
+
+#banner {
+  width: 100%;
+  padding: 100px 0;
+  background: url(../img/banner.jpg) no-repeat center/cover fixed; }
+  #banner .inner {
+    width: 1180px;
+    margin: 0 auto;
+    text-align: center; }
+    #banner .inner h1 {
+      font: 24px/1 "Open Sans", "Nanum Gothic";
+      color: #fff;
+      margin-bottom: 20px; }
+    #banner .inner p {
+      font: 14px/1.6 "Open Sans", "Nanum Gothic";
+      color: #ddd; }
+
+#project {
+  width: 100%;
+  padding: 80px 0; }
+  #project .inner {
+    width: 1180px;
+    position: relative;
+    margin: 0 auto;
+    display: flex; }
+    #project .inner article {
+      width: 50%;
+      height: 540px;
+      margin-right: 20px; }
+      #project .inner article .pic {
+        width: 100%;
+        height: 400px;
+        transition: 0.5s;
+        cursor: pointer; }
+        #project .inner article .pic img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover; }
+      #project .inner article .txt {
+        width: 100%;
+        height: 140px;
+        position: relative;
+        text-align: center;
+        padding: 40px 10px;
+        overflow: hidden; }
+        #project .inner article .txt::after {
+          content: '';
+          display: block;
+          width: 100%;
+          height: 100%;
+          background: #f0e2ce;
+          position: absolute;
+          top: 100%;
+          left: 0;
+          z-index: -1;
+          transition: 0.5s; }
+        #project .inner article .txt h1 {
+          font: 22px/1 "Open Sans", "Nanum Gothic";
+          color: #333;
+          margin-bottom: 10px;
+          position: relative;
+          padding-bottom: 10px; }
+          #project .inner article .txt h1::after {
+            content: '';
+            display: block;
+            width: 3vw;
+            height: 2px;
+            background: #a06c50;
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%); }
+        #project .inner article .txt span {
+          font: 12px/1 "Open Sans", "Nanum Gothic";
+          color: #555; }
+      #project .inner article:hover .pic {
+        filter: brightness(50%); }
+      #project .inner article:hover .txt::after {
+        top: 0; }
+      #project .inner article:last-child {
+        width: 48%;
+        margin-right: 0; }
+        #project .inner article:last-child h2 {
+          font: 26px/1 "Open Sans", "Nanum Gothic";
+          color: #333;
+          padding-bottom: 30px;
+          margin-bottom: 30px;
+          position: relative; }
+          #project .inner article:last-child h2::after {
+            content: '';
+            display: block;
+            width: 4vw;
+            height: 2px;
+            background: #865439;
+            position: absolute;
+            bottom: 0;
+            left: 0; }
+        #project .inner article:last-child p {
+          font: 14px/1.6 "Open Sans", "Nanum Gothic";
+          color: #555;
+          margin-bottom: 20px; }
+        #project .inner article:last-child a {
+          display: block;
+          width: 180px;
+          height: 30px;
+          background: #555;
+          font: 12px/30px "Open Sans", "Nanum Gothic";
+          color: #fff;
+          text-align: center;
+          letter-spacing: 1px; }
+
 #footer {
   width: 100%;
   background: #111;
