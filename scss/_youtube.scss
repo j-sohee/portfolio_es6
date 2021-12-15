@@ -64,7 +64,11 @@ aside{
     background:rgba(0,0,0,0.8);
     position:fixed; top:0; left:0;
     padding:80px; z-index:5;
-
+    iframe{
+        width:1200px; height:600px;
+        position:relative; top:50%; left:50%;
+        transform:translate(-50%,-50%);
+    }
     .close{
         position:absolute; right:20px; top:20px;
         font:18px/1 $font; color:#fff;
@@ -72,4 +76,51 @@ aside{
     }
 }
 
+@media screen and (max-width:$tablet){
+    .youtube{
+        .inner{
+            width:100%; padding:20px;
+            #vidGallery{
+                article{
+                    .con{
+                        padding:20px 10px 0px 10px;
+                        span{
+                            display:none;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    aside{
+        padding:40px;
+        iframe{
+            width:100%; height:450px;
+        }
+    }
+}
+
+@media screen and (max-width:$mobile){
+    .youtube{
+        .inner{
+            width:100%; padding:20px;
+            #vidGallery{
+                article{
+                    width:100%;
+                    .con{
+                        h2{
+                            font-size:14px;
+                        }
+                        p{
+                            font-size:12px;
+                        }
+                    }
+                    .btn{
+                        font-size:14px;
+                    }
+                }
+            }
+        }
+    }
+}
 
