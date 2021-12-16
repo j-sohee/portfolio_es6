@@ -5,11 +5,6 @@
 
     }
     .inner{
-        
-        h1{
-            border-bottom: none;
-            margin-bottom:20px; cursor: pointer;
-        }
         .loading{
             width:400px; height:300px;
             position:absolute; top:0px; left:50%;
@@ -101,3 +96,54 @@ aside{
     }
 }
 
+@media screen and (max-width:$tablet){
+    /*gallery---------------------------------*/
+    .gallery{
+        .inner{
+            width:100%; padding:20px;
+            #gallery{
+                .item{
+                    width:33.333%;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width:720px){
+    /*gallery---------------------------------*/
+    .gallery{
+        .inner{
+            #gallery{
+                .item{
+                    width:50%;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width:$mobile){
+        /*gallery---------------------------------*/
+        .gallery{
+            .inner{
+                .loading{
+                    width:300px; height:200px;
+                }
+        
+                #searchBox{
+                    input[type=text]{
+                        width:120px; 
+                    }
+                    button{
+                        width:60px; 
+                    }
+                }
+                #gallery{
+                    .item{
+                        width:100%;
+                    }
+                }
+            }
+        }
+}
