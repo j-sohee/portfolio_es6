@@ -141,3 +141,100 @@
         }
     }
 }
+
+@media screen and (max-width:$tablet){
+    .join{
+        .inner{
+            width:100%;  padding:20px;
+            .wrap{
+                ul{
+                    p{
+                        font:14px/1.4 $font; padding:0 20px;
+                    }
+                }
+            }
+            .base_info{
+                table{
+                    th{
+                        width:30%;
+                    }
+                    td{
+                        width:70%; padding:20px;
+                        input[type=text],input[type=password]{
+                            width:85%;
+                        }
+                        button{
+                            width:141px;
+                        }
+                        select{
+                            width:100px;
+                        }
+                        #code{
+                            width:45%;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width:$mobile){
+    .join{
+        .inner{
+            width:100%;  padding:20px;
+            .wrap{
+                ul{
+                    p{
+                        font:14px/1.4 $font; padding:0 20px;
+                    }
+                }
+            }
+            .base_info{
+                table{
+                    th{
+                        width:35%; padding:10px;
+                        font-size:13px;
+                        label{
+                            &::before{
+                                width:6px; height:6px; left:0px;
+                            }
+                        }
+                    }
+                    td{
+                        padding:10px;
+                        input[type=text],input[type=password]{
+                            width:100%; font-size:12px;
+                        }
+                        button{
+                            width:100%; font-size:12px;
+                        }
+                        select{
+                            width:100%; margin-bottom:5px;
+                        }
+                        >label{
+                            font-size:14px;
+                        }
+                        #code{
+                            width:100%; margin-bottom:5px;
+                        }
+                    }
+                }
+            }
+            .agreement{
+                label{
+                    font-size:16px;
+                }
+                .agreement_box{
+                    height:200px; font-size:14px;
+                    padding:20px; 
+                }
+            }
+            .btns{
+                input[type=reset],input[type=submit]{
+                    width:140px; font-size:14px;
+                }
+            }
+        }
+    }
+}

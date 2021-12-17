@@ -645,6 +645,66 @@ fieldset {
     background: #111;
     color: #fff; }
 
+@media screen and (max-width: 1179px) {
+  .join .inner {
+    width: 100%;
+    padding: 20px; }
+    .join .inner .wrap ul p {
+      font: 14px/1.4 "Open Sans", "Nanum Gothic";
+      padding: 0 20px; }
+    .join .inner .base_info table th {
+      width: 30%; }
+    .join .inner .base_info table td {
+      width: 70%;
+      padding: 20px; }
+      .join .inner .base_info table td input[type=text], .join .inner .base_info table td input[type=password] {
+        width: 85%; }
+      .join .inner .base_info table td button {
+        width: 141px; }
+      .join .inner .base_info table td select {
+        width: 100px; }
+      .join .inner .base_info table td #code {
+        width: 45%; } }
+@media screen and (max-width: 539px) {
+  .join .inner {
+    width: 100%;
+    padding: 20px; }
+    .join .inner .wrap ul p {
+      font: 14px/1.4 "Open Sans", "Nanum Gothic";
+      padding: 0 20px; }
+    .join .inner .base_info table th {
+      width: 35%;
+      padding: 10px;
+      font-size: 13px; }
+      .join .inner .base_info table th label::before {
+        width: 6px;
+        height: 6px;
+        left: 0px; }
+    .join .inner .base_info table td {
+      padding: 10px; }
+      .join .inner .base_info table td input[type=text], .join .inner .base_info table td input[type=password] {
+        width: 100%;
+        font-size: 12px; }
+      .join .inner .base_info table td button {
+        width: 100%;
+        font-size: 12px; }
+      .join .inner .base_info table td select {
+        width: 100%;
+        margin-bottom: 5px; }
+      .join .inner .base_info table td > label {
+        font-size: 14px; }
+      .join .inner .base_info table td #code {
+        width: 100%;
+        margin-bottom: 5px; }
+    .join .inner .agreement label {
+      font-size: 16px; }
+    .join .inner .agreement .agreement_box {
+      height: 200px;
+      font-size: 14px;
+      padding: 20px; }
+    .join .inner .btns input[type=reset], .join .inner .btns input[type=submit] {
+      width: 140px;
+      font-size: 14px; } }
 /*gallery---------------------------------*/
 .gallery .sub_visual {
   background: url(../img/gallery/bg01.jpg) no-repeat center/cover; }
