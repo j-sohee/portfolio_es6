@@ -344,6 +344,92 @@ $mobile : 539px;
             }
         }
     }
+    #brand{
+        padding:80px 20px;
+        .inner{
+            width:100%;
+            article{
+                width:48%;
+                margin-right:2%;
+                &:first-child{
+                    &::after{
+                        width:80%;left:0px;
+                    }
+                }
+                &:last-child{ margin-right:0; padding:20px 15px; }
+                .pic{
+                    width:90%;  right:0px; 
+                }
+                h1{
+                    font:26px/1.2 $font; 
+                    &::after{
+                        width:10vw; 
+                    }
+                }
+                p{
+                    width:100%; font:14px/1.6 $font; 
+                    margin:15px 0;
+                }
+            }
+        }
+    }
+    #news{
+        width:100%; padding:40px 20px 80px 20px;
+        .inner{
+            width:100%;
+            >h1{
+                width:100%;
+                font:24px/1 $font; color:#333;
+                position:relative; padding-bottom:20px;
+                margin-bottom:20px;
+                &::after{
+                    content:''; display:block;
+                    width:5vw; height:2px; background:#865439;
+                    position:absolute; bottom:0; left:50%;
+                    transform:translateX(-50%);
+                }
+            }
+            >p{
+                width:60%;
+                font:14px/1.4 $font; color:#555;
+                margin-bottom:40px;
+            }
+        }
+        .wrap{
+            width:100%; margin:0 auto; position:relative;
+            display:flex;  flex-wrap:wrap;
+            >article{
+                width:50%; height:250px;
+                display:flex; text-align:center;
+                .pic{
+                    width:100%; height:100%;
+                    img{ width:100%; height:100%; object-fit:cover; }
+                }
+                &:nth-of-type(2n){
+                    background:#faf3e9; padding:10px; 
+                    .content{
+                        width:100%; height:100%; border:1px solid #ccc; padding:30px 10px;
+                        display:flex; justify-content: center;
+                        flex-wrap: wrap; align-items: center;
+                        h2{
+                            font:22px/1 $font; color:#333;
+                        }
+                        span{
+                            width:100%;
+                            font:14px/1.4 $font; color:#555;
+                        }
+                        .btns{
+                            display:block; width:120px; height:30px;
+                            background:#9e6f56;
+                            font:12px/30px $font; color:#fff;
+                            text-align:center;
+                        }
+                    }
+                    
+                }
+            }
+        }
+    }
     #footer{
         padding:20px;
         .inner{
