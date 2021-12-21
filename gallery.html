@@ -5,9 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Gallery</title>
-    <script src="https://kit.fontawesome.com/6ce8152991.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="css/style.css">
     <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
+    <script defer src="js/menu.js"></script>
     <script defer src="js/myFlickr.js"></script>
     <script>
         window.addEventListener("load", ()=>{
@@ -21,20 +21,29 @@
             <h1><a href="index.html">PORTFOLIO</a></h1>
             <nav class="menuWeb">
                 <ul id="gnb">
-                    <li>
-                        <a href="department.html">ABOUT</a>
-                    </li>
-                    <li>
-                        <a href="youtube.html">YOUTUBE</a>
-                    </li>
-                    <li>
-                        <a href="gallery.html">GALLERY</a>
-                    </li>
-                    <li>
-                        <a href="join.html">JOIN</a>
-                    </li>
+                    <li><a href="department.html">ABOUT</a></li>
+                    <li><a href="youtube.html">YOUTUBE</a></li>
+                    <li><a href="gallery.html">GALLERY</a></li>
+                    <li><a href="join.html">JOIN</a></li>
                 </ul>
             </nav>
+            <a href="#" class="btnCall">
+				<span>메뉴호출</span>
+			</a>
+
+			<nav class="menuMo">
+				<h1>
+					<a href="index.html">PROTPOLIO</a>
+					<span>UI/UX DEBELOPMENT INSTITUTE</span>
+				</h1>
+
+				<ul id="gnbMo">
+					<li><a href="department.html">ABOUT</a></li>
+                    <li><a href="youtube.html">YOUTUBE</a></li>
+                    <li><a href="gallery.html">GALLERY</a></li>
+                    <li><a href="join.html">JOIN</a></li>
+				</ul>
+			</nav>
         </div>
     </header>
     <section class="content gallery">
