@@ -1430,7 +1430,10 @@ aside {
             #footer .inner .wrap .familysite .sns li a {
               font-size: 20px;
               color: #999;
-              padding: 9px; } }
+              padding: 9px; }
+
+  #navi {
+    right: 10px; } }
 @media screen and (max-width: 539px) {
   #header {
     padding: 10px; }
@@ -1463,6 +1466,10 @@ aside {
           height: auto;
           padding: 20px 0; }
 
+  #news .inner > h1::after {
+    width: 50%; }
+  #news .inner > p {
+    width: 100%; }
   #news .wrap > article {
     width: 100%; }
 
@@ -1495,6 +1502,9 @@ aside {
     #footer .inner .wrap .familysite .sns li a {
       font-size: 20px;
       color: #999;
-      padding: 0 10px 0 0; } }
+      padding: 0 10px 0 0; }
+
+  #navi {
+    display: none; } }
 
 /*# sourceMappingURL=style.css.map */
