@@ -26,31 +26,6 @@ window.addEventListener("resize", ()=>{
     window.scroll(0, posArr[activeInedx]);
  })
  
- window.addEventListener("mousewheel", e=>{
-    e.preventDefault();
- 
-    let activeItem = document.querySelector("ul li.on");
-    let activeIndex = lis_arr.indexOf(activeItem);
-    let targetIndex;
- 
-    //마우스휠을 올리면(-100)
-    if(e.deltaY < 0){
-       if(activeIndex == 0) return;
-       targetIndex = activeIndex -1;
-    }else{
-       if(activeIndex == len-1) return;
-       //마우스휠을 내리면(100)
-       targetIndex = activeIndex +1;
-    }
- 
-    new Anim(window, {
-       prop : "scroll",
-       value : posArr[targetIndex],
-       duration : speed
-    })
- }, {passive : false})
- 
- 
 
 window.addEventListener("scroll", e=>{
     let scroll = window.scrollY || window.pageYOffset;
