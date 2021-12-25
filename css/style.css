@@ -1050,7 +1050,7 @@ aside {
   position: absolute;
   top: 0;
   left: 0;
-  background: rgba(255, 255, 255, 0.6);
+  background: rgba(0, 0, 0, 0.5);
   z-index: 5; }
   #header .inner {
     width: 1180px;
@@ -1064,7 +1064,7 @@ aside {
       transform: translateY(-50%); }
       #header .inner > h1 a {
         font: 28px/1 "Open Sans", "Nanum Gothic";
-        color: #333; }
+        color: #ddd; }
     #header .inner .menuWeb #gnb {
       position: absolute;
       right: 0;
@@ -1079,7 +1079,7 @@ aside {
         #header .inner .menuWeb #gnb li a {
           display: inline-block;
           font: 14px/1 "Open Sans", "Nanum Gothic";
-          color: #333;
+          color: #ccc;
           padding: 0 20px; }
     #header .inner .btnCall {
       position: absolute;
