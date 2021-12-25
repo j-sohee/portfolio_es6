@@ -8,14 +8,15 @@ btnCall.onclick = function(e){
     menuMo.classList.toggle("on");
 }
 
-//slider
-const slider = document.querySelector("#visual #slider");
+const slider = document.querySelector("#slider");
 const ul = slider.querySelector("ul");
-const slider_lis = ul.querySelectorAll("li");
+const lis1 = ul.querySelectorAll("li");
 const prev = document.querySelector(".prev");
 const next = document.querySelector(".next");
-const slider_len = slider_lis.length;
+const speed = 500;
+const len1 = lis1.length;
 let enableClick = true;
+
 
 init();
 
@@ -36,8 +37,8 @@ prev.addEventListener("click", e=>{
 })
 
 function init(){
-    ul.style.width = `${100*slider_len}%`;
-    slider_lis.forEach(li=> li.style.width = `${100/slider_len}%`);
+    ul.style.width = `${100*len1}%`;
+    lis1.forEach(li=> li.style.width = `${100/len1}%`);
     ul.style.left = "-100%";
     ul.prepend(ul.lastElementChild);
 }
@@ -68,12 +69,12 @@ function prevSlide(){
    })
 }
 
+
 //scroll
 const sections = document.querySelectorAll(".myScroll");
-const lis = document.querySelectorAll("#navi li");
-const lis_arr = Array.from(lis);
-const len = sections.length;
-const speed = 500;
+const lis2 = document.querySelectorAll("#navi li");
+const lis_arr = Array.from(lis2);
+const len2 = sections.length;
 let posArr = [];
 let base = -200;
 
@@ -93,25 +94,25 @@ window.addEventListener("scroll", e=>{
     let scroll = window.scrollY || window.pageYOffset;
     sections.forEach((el,index)=>{
         if(scroll >= posArr[index] + base){
-            lis.forEach((el,i)=>{
+            lis2.forEach((el,i)=>{
                 el.classList.remove("on");
                 sections[i].classList.remove("on");
             })
 
-            lis[index].classList.add("on");
+            lis2[index].classList.add("on");
             sections[index].classList.add("on");
         }
     })
 })
 
-lis.forEach((el,index)=>{
+lis2.forEach((el,index)=>{
     el.addEventListener("click", e=>{
         new Anim(window, {
             prop:"scroll",
             value:posArr[index],
             duration:500
         })
-        for(let el of lis){
+        for(let el of lis2){
             el.classList.remove("on");
         }
         e.currentTarget.classList.add("on");
