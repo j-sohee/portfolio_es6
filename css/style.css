@@ -284,304 +284,155 @@ fieldset {
       color: #999;
       padding: 0 10px 0 0; } }
 /*department---------------------------------*/
-.department .sub_visual {
-  background: url(../img/department/bg5.jpg) no-repeat center/cover; }
-.department .inner {
-  width: 100%;
-  position: relative; }
-  .department .inner .mainTit {
-    width: 1180px;
-    margin: 0 auto; }
-    .department .inner .mainTit h1 {
-      font: 32px/1 "Open Sans", "Nanum Gothic";
-      color: #000;
-      margin-bottom: 40px;
-      padding-bottom: 30px;
-      border-bottom: 1px solid #ddd; }
-  .department .inner .sub_tit {
-    width: 100%;
-    text-align: center;
-    margin-bottom: 60px; }
-    .department .inner .sub_tit h2 {
-      font: 26px/1 "Open Sans", "Nanum Gothic";
-      color: #333;
-      margin-bottom: 20px;
-      text-align: center;
-      position: relative;
-      padding-bottom: 15px; }
-      .department .inner .sub_tit h2::after {
-        content: '';
-        display: block;
-        width: 50px;
-        height: 1px;
-        background: #93B5C6;
-        position: absolute;
-        left: 50%;
-        bottom: 0;
-        transform: translateX(-50%); }
-    .department .inner .sub_tit > p {
-      font: 14px/1.4 "Open Sans", "Nanum Gothic";
-      color: #555; }
-  .department .inner .dpt1 {
-    width: 1180px;
-    margin: 0 auto;
-    margin-bottom: 100px; }
-    .department .inner .dpt1::after {
-      content: '';
-      display: block;
-      clear: both; }
-    .department .inner .dpt1 .left {
-      width: 50%;
-      height: 320px;
-      float: left;
-      padding: 20px 10px; }
-      .department .inner .dpt1 .left p {
-        font: 16px/1.5 "Open Sans", "Nanum Gothic";
-        color: #555;
-        margin-bottom: 76px;
-        padding-right: 20px; }
-      .department .inner .dpt1 .left a {
-        display: block;
-        width: 120px;
-        height: 40px;
-        font: 12px/40px "Open Sans", "Nanum Gothic";
-        color: #666;
-        border: 1px solid #aaa;
-        text-align: center;
-        transition: 0.5s; }
-        .department .inner .dpt1 .left a:hover {
-          color: #C05C7E;
-          border-color: #C05C7E; }
-    .department .inner .dpt1 .right {
-      width: 50%;
-      height: 320px;
-      float: left;
-      position: relative;
-      overflow: hidden; }
-      .department .inner .dpt1 .right .swiper-wrapper {
-        width: 100%;
-        height: 280px; }
-        .department .inner .dpt1 .right .swiper-wrapper .swiper-slide {
-          width: 100%;
-          height: 100%; }
-        .department .inner .dpt1 .right .swiper-wrapper .box1 {
-          background: url(../img/department/about1.jpg) no-repeat center/cover; }
-        .department .inner .dpt1 .right .swiper-wrapper .box2 {
-          background: url(../img/department/about2.jpg) no-repeat center/cover; }
-        .department .inner .dpt1 .right .swiper-wrapper .box3 {
-          background: url(../img/department/about3.jpg) no-repeat center/cover; }
-      .department .inner .dpt1 .right .swiper-pagination {
-        width: 100%;
-        position: absolute;
-        bottom: 0;
-        left: 0; }
-        .department .inner .dpt1 .right .swiper-pagination .swiper-pagination-bullet-active {
-          background: #3D84B8; }
-  .department .inner .dpt2 {
-    width: 100%;
-    margin-bottom: 100px;
-    padding: 40px 0 100px 0;
-    background: #eeeeee; }
-    .department .inner .dpt2 .wrap {
+.department {
+  padding: 0 0 0; }
+  .department .sub_visual {
+    background: url(../img/department/bg.jpg) no-repeat center/cover; }
+  .department .wrap {
+    width: 100%; }
+    .department .wrap .part1 {
       width: 1180px;
-      margin: 0 auto; }
-      .department .inner .dpt2 .wrap::after {
+      margin: 0 auto;
+      position: relative;
+      margin-bottom: 60px; }
+      .department .wrap .part1 h2 {
+        font: bold 28px/1 "Open Sans", "Nanum Gothic";
+        color: #333;
+        text-align: center;
+        margin-bottom: 10px; }
+      .department .wrap .part1 > p {
+        font: 14px/1 "Open Sans", "Nanum Gothic";
+        color: #555;
+        text-align: center;
+        margin-bottom: 40px; }
+      .department .wrap .part1::after {
         content: '';
         display: block;
         clear: both; }
-      .department .inner .dpt2 .wrap article {
+      .department .wrap .part1 article {
         width: 380px;
-        height: 150px;
         margin-right: 20px;
-        margin-top: 20px;
-        float: left;
-        text-align: center; }
-        .department .inner .dpt2 .wrap article:nth-of-type(3n) {
-          margin-right: 0; }
-        .department .inner .dpt2 .wrap article .icon {
-          width: 44px;
-          height: 44px;
-          margin: 0 auto; }
-          .department .inner .dpt2 .wrap article .icon img {
+        float: left; }
+        .department .wrap .part1 article .pic {
+          width: 100%;
+          margin-bottom: 20px; }
+          .department .wrap .part1 article .pic img {
             width: 100%;
-            height: 100%; }
-        .department .inner .dpt2 .wrap article h3 {
-          font: bold 16px/1 "Open Sans", "Nanum Gothic";
+            height: 220px;
+            object-fit: cover; }
+        .department .wrap .part1 article h3 {
+          font: bold 18px/1 "Open Sans", "Nanum Gothic";
           color: #333;
-          margin-top: 20px; }
-        .department .inner .dpt2 .wrap article p {
+          margin-bottom: 10px; }
+        .department .wrap .part1 article > p {
+          font: 14px/1.4 "Open Sans", "Nanum Gothic";
+          color: #777; }
+        .department .wrap .part1 article:last-child {
+          margin-right: 0; }
+    .department .wrap .part2 {
+      width: 100%;
+      padding: 50px 0;
+      display: flex; }
+      .department .wrap .part2 .txt {
+        width: 50%;
+        padding: 90px 100px;
+        background: rgba(0, 0, 0, 0.9);
+        text-align: center; }
+        .department .wrap .part2 .txt h3 {
+          font: 24px/1 "Open Sans", "Nanum Gothic";
+          color: #fff;
+          letter-spacing: 2px;
+          margin-bottom: 10px; }
+        .department .wrap .part2 .txt p {
+          font: 16px/1 "Open Sans", "Nanum Gothic";
+          color: #ccc;
+          margin-bottom: 20px; }
+        .department .wrap .part2 .txt span {
+          display: block;
+          font: 14px/1.6 "Open Sans", "Nanum Gothic";
+          color: #aaa;
+          margin-bottom: 20px; }
+        .department .wrap .part2 .txt a {
           display: inline-block;
-          font: 14px/1.3 "Open Sans", "Nanum Gothic";
-          color: #666;
-          padding: 15px 30px;
-          box-sizing: border-box; }
-  .department .inner .dpt3 {
-    width: 1180px;
-    margin: 0 auto; }
-    .department .inner .dpt3::after {
-      content: '';
-      display: block;
-      clear: both; }
-    .department .inner .dpt3 > article {
-      width: 295px;
-      height: 300px;
-      position: relative;
-      float: left;
-      transition: 0.5s; }
-      .department .inner .dpt3 > article:hover .teamBox {
-        opacity: 1;
-        bottom: 0; }
-      .department .inner .dpt3 > article:hover .pic img {
-        filter: grayscale(0%); }
-      .department .inner .dpt3 > article .pic {
-        width: 100%;
-        height: 100%; }
-        .department .inner .dpt3 > article .pic img {
+          text-align: center;
+          width: 120px;
+          height: 30px;
+          font: 12px/30px "Open Sans", "Nanum Gothic";
+          color: #fff;
+          background: #c78500; }
+      .department .wrap .part2 .pic {
+        width: 50%;
+        height: 380px; }
+        .department .wrap .part2 .pic img {
           width: 100%;
           height: 100%;
-          object-fit: cover;
-          filter: grayscale(100%); }
-      .department .inner .dpt3 > article .teamBox {
-        width: 100%;
-        height: 50%;
-        position: absolute;
-        bottom: -50px;
-        left: 0;
-        padding: 20px 30px 35px;
-        transition: 0.5s;
-        opacity: 0; }
-        .department .inner .dpt3 > article .teamBox h4 {
-          font: 20px/1 "Open Sans", "Nanum Gothic";
-          color: #fff;
-          margin-bottom: 10px; }
-        .department .inner .dpt3 > article .teamBox span {
-          font: 12px/1 "Open Sans", "Nanum Gothic";
-          color: #eee;
-          letter-spacing: 1px; }
-        .department .inner .dpt3 > article .teamBox .sns {
-          display: inline-block;
-          width: 90px;
-          height: 30px;
-          background: #eee;
-          text-align: center;
-          margin-top: 30px; }
-          .department .inner .dpt3 > article .teamBox .sns a {
-            display: inline-block;
-            color: #333;
-            line-height: 30px;
-            padding: 0 5px; }
-            .department .inner .dpt3 > article .teamBox .sns a i {
-              font-size: 12px; }
-      .department .inner .dpt3 > article:nth-of-type(7) {
-        padding: 40px;
-        background: #efefef; }
-        .department .inner .dpt3 > article:nth-of-type(7) p {
-          text-align: left;
-          padding: 0 0 0 10px;
-          font: 12px/1 "Open Sans", "Nanum Gothic";
-          color: #666;
-          letter-spacing: 2px;
-          margin-top: 60px;
-          margin-bottom: 10px; }
-          .department .inner .dpt3 > article:nth-of-type(7) p::before {
-            content: '';
-            display: inline-block;
-            width: 1px;
-            height: 23px;
-            background: #93B5C6;
-            transform: rotate(55deg);
-            margin-right: 15px; }
-        .department .inner .dpt3 > article:nth-of-type(7) span {
-          display: block;
-          font: 18px/1.4 "arial";
-          color: #3b3b3b;
-          letter-spacing: 2px; }
-        .department .inner .dpt3 > article:nth-of-type(7) a {
-          display: block;
-          width: 150px;
-          height: 40px;
-          border: 1px solid #ccc;
-          font: 12px/40px "Open Sans", "Nanum Gothic";
-          color: #999;
-          letter-spacing: 2px;
-          text-align: center;
-          margin-top: 40px;
-          transition: 0.5s; }
-          .department .inner .dpt3 > article:nth-of-type(7) a:hover {
-            border: 1px solid #93B5C6;
-            color: #93B5C6; }
-
-@media screen and (max-width: 1179px) {
-  .department .inner .mainTit {
-    width: 100%;
-    padding: 0 20px; }
-  .department .inner .dpt1 {
-    width: 100%;
-    padding: 0 20px; }
-    .department .inner .dpt1 .left {
-      padding: 0px; }
-      .department .inner .dpt1 .left p {
-        font-size: 14px;
-        margin-bottom: 30px; }
-  .department .inner .dpt2 {
-    width: 100%;
-    margin-bottom: 100px;
-    padding: 40px 0 100px 0;
-    background: #eeeeee; }
-    .department .inner .dpt2 .wrap {
-      width: 100%;
-      padding: 0 20px; }
-      .department .inner .dpt2 .wrap::after {
+          object-fit: cover; }
+    .department .wrap .part3 {
+      width: 1180px;
+      margin: 0 auto;
+      padding: 50px 0 100px 0; }
+      .department .wrap .part3 h3 {
+        font: bold 24px/1 "Open Sans", "Nanum Gothic";
+        color: #333;
+        text-align: center;
+        margin-bottom: 10px; }
+      .department .wrap .part3 > p {
+        font: 14px/1 "Open Sans", "Nanum Gothic";
+        color: #555;
+        text-align: center;
+        margin-bottom: 40px; }
+      .department .wrap .part3::after {
         content: '';
         display: block;
         clear: both; }
-      .department .inner .dpt2 .wrap article {
-        width: 49%;
-        margin-right: 2%;
-        margin-top: 0;
-        margin-bottom: 60px; }
-        .department .inner .dpt2 .wrap article:nth-of-type(2n) {
+      .department .wrap .part3 article {
+        width: 280px;
+        margin-right: 20px;
+        float: left;
+        padding: 40px 30px;
+        border: 1px solid #ddd;
+        box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2); }
+        .department .wrap .part3 article p {
+          font: 14px/1.4 "Open Sans", "Nanum Gothic";
+          color: #666;
+          margin-bottom: 20px; }
+        .department .wrap .part3 article .chef {
+          width: 100%; }
+          .department .wrap .part3 article .chef .pic {
+            width: 28%;
+            height: 60px;
+            float: left; }
+            .department .wrap .part3 article .chef .pic img {
+              width: 100%;
+              height: 100%;
+              object-fit: cover;
+              border-radius: 50%; }
+          .department .wrap .part3 article .chef .name {
+            width: 70%;
+            padding: 5px 0 0 10px;
+            float: left; }
+            .department .wrap .part3 article .chef .name span {
+              font: 13px/1 "Open Sans", "Nanum Gothic";
+              color: #333; }
+            .department .wrap .part3 article .chef .name h4 {
+              font: bold 16px/1 "Open Sans", "Nanum Gothic";
+              color: #333; }
+        .department .wrap .part3 article:last-child {
           margin-right: 0; }
-        .department .inner .dpt2 .wrap article h3 {
-          margin-top: 10px; }
-  .department .inner .dpt3 {
-    width: 100%;
-    padding: 0 20px; }
-    .department .inner .dpt3 > article {
-      width: 50%;
-      height: 300px;
-      position: relative;
-      float: left;
-      transition: 0.5s; }
-      .department .inner .dpt3 > article:nth-of-type(7) p {
-        margin-top: 20px; } }
-@media screen and (max-width: 539px) {
-  .department .inner .mainTit h1 {
-    font-size: 28px; }
-  .department .inner .sub_tit h2 {
-    font-size: 20px; }
-  .department .inner .sub_tit p {
-    font-size: 12px; }
-  .department .inner .dpt1 {
-    margin-bottom: 60px; }
-    .department .inner .dpt1 .left {
+    .department .wrap .part4 {
       width: 100%;
-      height: 300px; }
-      .department .inner .dpt1 .left p {
-        font-size: 14px;
-        text-align: center;
-        margin-bottom: 30px;
-        padding-right: 0; }
-      .department .inner .dpt1 .left a {
-        width: 100%; }
-    .department .inner .dpt1 .right {
-      width: 100%; }
-  .department .inner .dpt2 .wrap article {
-    width: 100%; }
-    .department .inner .dpt2 .wrap article h3 {
-      font-size: 14px; }
-  .department .inner .dpt3 > article {
-    width: 100%; } }
+      padding: 50px 0 20px 0; }
+      .department .wrap .part4 ul {
+        width: 100%;
+        display: flex; }
+        .department .wrap .part4 ul li {
+          width: calc(100% / 5);
+          height: 130px; }
+          .department .wrap .part4 ul li img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain; }
+
 /*join---------------------------------*/
 .join .sub_visual {
   background: url(../img/join/join01.jpg) no-repeat center/cover; }
