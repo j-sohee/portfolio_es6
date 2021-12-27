@@ -1,3 +1,14 @@
+//skip navi
+const skip_btn = document.querySelectorAll("#skip a");
+skip_btn.forEach((btn,index)=>{
+    btn.addEventListener("focusin", e=>{
+        e.currentTarget.classList.add("on");
+    })
+    btn.addEventListener("focusout", e=>{
+        e.currentTarget.classList.remove("on");
+    })
+})
+
 const btnCall = document.querySelector(".btnCall");
 const menuMo = document.querySelector(".menuMo");
 
