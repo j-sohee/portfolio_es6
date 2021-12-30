@@ -21,10 +21,15 @@ fieldset {
 /*header_sub--------------------------*/
 #header_sub {
   width: 100%;
-  border-bottom: 1px solid #ddd; }
+  height: 80px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 5; }
   #header_sub .inner {
     width: 1180px;
-    height: 80px;
+    height: 100%;
     margin: 0 auto;
     position: relative; }
     #header_sub .inner > h1 {
@@ -34,7 +39,7 @@ fieldset {
       transform: translateY(-50%); }
       #header_sub .inner > h1 a {
         font: 28px/1 "Open Sans", "Nanum Gothic";
-        color: #333; }
+        color: #ddd; }
     #header_sub .inner .menuWeb #gnb {
       position: absolute;
       right: 0;
@@ -49,8 +54,11 @@ fieldset {
         #header_sub .inner .menuWeb #gnb li a {
           display: inline-block;
           font: 14px/1 "Open Sans", "Nanum Gothic";
-          color: #333;
-          padding: 0 20px; }
+          color: #ccc;
+          padding: 0px 20px;
+          transition: 0.5s; }
+        #header_sub .inner .menuWeb #gnb li:hover a {
+          color: #fff; }
     #header_sub .inner .btnCall {
       position: absolute;
       top: 50%;
@@ -64,7 +72,7 @@ fieldset {
         display: block;
         width: 100%;
         height: 2px;
-        background: #000;
+        background: #ddd;
         position: absolute;
         top: 0;
         left: 0;
@@ -75,7 +83,7 @@ fieldset {
         display: block;
         width: 100%;
         height: 2px;
-        background: #000;
+        background: #ddd;
         position: absolute;
         bottom: 0;
         left: 0;
@@ -85,7 +93,7 @@ fieldset {
         display: block;
         width: 100%;
         height: 2px;
-        background: #000;
+        background: #ddd;
         text-indent: -9999px;
         position: absolute;
         top: 50%;
@@ -142,13 +150,13 @@ fieldset {
   padding: 0px 0px 120px; }
   .content .sub_visual {
     width: 100%;
-    height: 280px;
+    height: 300px;
     margin-bottom: 80px;
     background: #000;
     position: relative; }
     .content .sub_visual .title {
       position: absolute;
-      top: 50%;
+      top: 180px;
       left: 50%;
       transform: translate(-50%, -50%);
       text-align: center; }
@@ -1000,7 +1008,10 @@ aside {
           display: inline-block;
           font: 14px/1 "Open Sans", "Nanum Gothic";
           color: #ccc;
-          padding: 0 20px; }
+          padding: 0px 20px;
+          transition: 0.5s; }
+        #header .inner .menuWeb #gnb li:hover a {
+          color: #fff; }
     #header .inner .btnCall {
       position: absolute;
       top: 50%;
@@ -1131,7 +1142,8 @@ aside {
         top: 50%;
         left: 30%;
         transform-origin: left center;
-        transform: rotate(-30deg); }
+        transform: rotate(-30deg);
+        transition: 0.5s; }
       #visual .btn .prev::after {
         content: '';
         display: block;
@@ -1142,7 +1154,10 @@ aside {
         bottom: 50%;
         left: 30%;
         transform-origin: left center;
-        transform: rotate(30deg); }
+        transform: rotate(30deg);
+        transition: 0.5s; }
+      #visual .btn .prev:hover::before, #visual .btn .prev:hover::after {
+        background: #fff; }
     #visual .btn .next {
       display: inline-block;
       width: 100px;
@@ -1162,7 +1177,8 @@ aside {
         top: 50%;
         right: 30%;
         transform-origin: right center;
-        transform: rotate(-30deg); }
+        transform: rotate(-30deg);
+        transition: 0.5s; }
       #visual .btn .next::after {
         content: '';
         display: block;
@@ -1173,7 +1189,10 @@ aside {
         bottom: 50%;
         right: 30%;
         transform-origin: right center;
-        transform: rotate(30deg); }
+        transform: rotate(30deg);
+        transition: 0.5s; }
+      #visual .btn .next:hover::before, #visual .btn .next:hover::after {
+        background: #fff; }
 
 #brand {
   width: 100%;

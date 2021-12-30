@@ -18,11 +18,12 @@ class Myflickr{
       this.url1 = `${this.base}method=${this.method1}&api_key=${this.key}&user_id=${this.user_id}&per_page=${this.per_page}&format=${this.format}&nojsoncallback=1`;
 
       this.callData(this.url1);
+
       this.searchBtn.addEventListener("click", e=>{
          let tag = this.input.value;
          if( tag == "") return; 
       
-         const url = `${this.base}method=$this.{method2}&api_key=${this.key}&per_page=${this.per_page}&format=${this.format}&nojsoncallback=1&tags=${tag}&privacy_filter=1`;
+         const url = `${this.base}method=${this.method2}&api_key=${this.key}&per_page=${this.per_page}&format=${this.format}&nojsoncallback=1&tags=${tag}&privacy_filter=1`;
       
          this.callData(url);
       });
@@ -32,15 +33,17 @@ class Myflickr{
       })
       
       this.input.addEventListener("keypress", e=>{
-         if(this.key = "Enter"){
+         if(e.key == "Enter"){
+            console.log(e.key);
             let tag = this.input.value;
             if( tag == "") return;
-      
+
             const url = `${this.base}method=${this.method2}&api_key=${this.key}&per_page=${this.per_page}&format=${this.format}&nojsoncallback=1&tags=${tag}&privacy_filter=1`;
             
             this.callData(url);
          }
       });
+   
       
       this.frame.addEventListener("click", e=>{
          e.preventDefault();
@@ -77,7 +80,7 @@ class Myflickr{
          return result; 
       })
       .then(json=>{   
-         let items = json.photos.photo;   
+         let items = json.photos.photo;  
          this.createList(items);
          this.delayLoading();
       })

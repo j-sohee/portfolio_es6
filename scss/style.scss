@@ -49,7 +49,10 @@ $mobile : 539px;
                     a{
                         display:inline-block;
                         font:14px/1 $font; color:#ccc;
-                        padding:0 20px;
+                        padding:0px 20px; transition:0.5s;
+                    }
+                    &:hover{
+                        a{ color:#fff; }
                     }
                 }
             }
@@ -194,16 +197,18 @@ $mobile : 539px;
                 width:30%; height:1px; background:#888;
                 position:absolute; top:50%; left:30%;
                 transform-origin: left center;
-                transform:rotate(-30deg);
+                transform:rotate(-30deg); transition:0.5s;
             }
             &::after{
                 content:''; display:block;
                 width:30%; height:1px; background:#888;
                 position:absolute; bottom:50%; left:30%;
                 transform-origin: left center;
-                transform:rotate(30deg);
+                transform:rotate(30deg); transition:0.5s;
             }
-    
+            &:hover{
+                &::before, &::after{ background:#fff; }
+            }
         }
         .next{
             display:inline-block;
@@ -216,14 +221,17 @@ $mobile : 539px;
                 width:30%; height:1px; background:#888;
                 position:absolute; top:50%; right:30%;
                 transform-origin: right center;
-                transform:rotate(-30deg);
+                transform:rotate(-30deg); transition:0.5s;
             }
             &::after{
                 content:''; display:block;
                 width:30%; height:1px; background:#888;
                 position:absolute; bottom:50%; right:30%;
                 transform-origin: right center;
-                transform:rotate(30deg);
+                transform:rotate(30deg); transition:0.5s;
+            }
+            &:hover{
+                &::before, &::after{ background:#fff; }
             }
         }
     }

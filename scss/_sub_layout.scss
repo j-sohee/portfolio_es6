@@ -1,15 +1,15 @@
 /*header_sub--------------------------*/
 #header_sub{
-    width:100%; 
-    border-bottom:1px solid #ddd;
+    width:100%; height:80px;  position:absolute; top:0; left:0; background:rgba(0,0,0,0.5);
+    z-index:5;
     .inner{
-        width:1180px; height:80px; margin:0 auto;
+        width:1180px; height:100%; margin:0 auto;
         position:relative;
         >h1{
             position:absolute; top:50%; left:0;
             transform:translateY(-50%);
             a{
-                font:28px/1 $font; color:#333;
+                font:28px/1 $font; color:#ddd;
             }
         }
         .menuWeb{
@@ -23,8 +23,11 @@
                     float:left;
                     a{
                         display:inline-block;
-                        font:14px/1 $font; color:#333;
-                        padding:0 20px;
+                        font:14px/1 $font; color:#ccc;
+                        padding:0px 20px; transition:0.5s;
+                    }
+                    &:hover{
+                        a{ color:#fff; }
                     }
                 }
             }
@@ -42,7 +45,7 @@
                 content:''; display:block;
                 width:100%;
                 height:2px;
-                background:#000;
+                background:#ddd;
                 position:absolute;
                 top:0;
                 left:0;
@@ -54,7 +57,7 @@
                 content:''; display:block;
                 width:100%;
                 height:2px;
-                background:#000;
+                background:#ddd;
                 position:absolute;
                 bottom:0;
                 left:0;
@@ -66,7 +69,7 @@
                 display:block;
                 width:100%;
                 height:2px;
-                background:#000;
+                background:#ddd;
                 text-indent:-9999px;
                 position:absolute;
                 top:50%;
@@ -141,10 +144,10 @@
     width:100%;
     padding:0px 0px 120px;
     .sub_visual{
-        width:100%;  height:280px; margin-bottom:80px;
+        width:100%;  height:300px; margin-bottom:80px;
         background:#000; position:relative;
         .title{
-            position:absolute; top:50%; left:50%;
+            position:absolute; top:180px; left:50%;
             transform: translate(-50%, -50%);
             text-align:center;
             h1{
